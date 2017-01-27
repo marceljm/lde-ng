@@ -1,0 +1,7 @@
+node_modules
+app/**/*.js
+*.log
+*.map
+*.d.ts
+*.DS_Store
+typings

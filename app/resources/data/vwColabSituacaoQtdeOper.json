@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "quantidade": 23,
+            "situacao": "Férias"
+        },
+        {
+            "quantidade": 86,
+            "situacao": "Em Produção"
+        },
+        {
+            "quantidade": 43,
+            "situacao": "INSS"
+        },
+        {
+            "quantidade": 56,
+            "situacao": "Emprestado"
+        }
+    ]
+}
