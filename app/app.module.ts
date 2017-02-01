@@ -11,7 +11,7 @@ import { AppTree } from './app.tree';
 import { AppEmployee } from './app.employee';
 import { AppComponent } from './app.component';
 import { AppCar } from './app.car';
-import { ValidationDemo } from './ValidationDemo';
+import { ValidationDemo } from './validationdemo';
 
 import { CarService } from './cars/carservice';
 

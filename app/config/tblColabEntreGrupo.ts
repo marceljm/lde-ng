@@ -1,4 +1,4 @@
-import { TblColabGrupo } from './TblColabGrupo';
+import { TblColabGrupo } from './tblColabGrupo';
 
 export class TblColabEntreGrupo {
     identregrupo: number;

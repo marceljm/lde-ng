@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { ConfigService } from './config/configService';
-import { TblColabAdmin } from './config/TblColabAdmin';
-import { TblColabCargo } from './config/TblColabCargo';
-import { TblColabCidade } from './config/TblColabCidade';
-import { TblColabEstado } from './config/TblColabEstado';
-import { TblColabGrupo } from './config/TblColabGrupo';
-import { TblColabSituacao } from './config/TblColabSituacao';
-import { TblColabEntreGrupo } from './config/TblColabEntreGrupo';
+import { TblColabAdmin } from './config/tblColabAdmin';
+import { TblColabCargo } from './config/tblColabCargo';
+import { TblColabCidade } from './config/tblColabCidade';
+import { TblColabEstado } from './config/tblColabEstado';
+import { TblColabGrupo } from './config/tblColabGrupo';
+import { TblColabSituacao } from './config/tblColabSituacao';
+import { TblColabEntreGrupo } from './config/tblColabEntreGrupo';
 import { Message, SelectItem } from 'primeng/primeng';
 
 @Component({
