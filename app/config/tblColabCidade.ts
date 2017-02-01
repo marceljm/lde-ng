@@ -1,4 +1,4 @@
-import { TblColabEstado } from './TblColabEstado';
+import { TblColabEstado } from './tblColabEstado';
 
 export class TblColabCidade {
     idcidade: number;

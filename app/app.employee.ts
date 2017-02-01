@@ -2,18 +2,18 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Validators, FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { EmployeeService } from './employee/employeeService';
 import { Message, SelectItem } from 'primeng/primeng';
-import { VwColabEstado } from './employee/VwColabEstado';
-import { VwColabCidade } from './employee/VwColabCidade';
-import { VwColabCargo } from './employee/VwColabCargo';
-import { VwColabCargaHoraria } from './employee/VwColabCargaHoraria';
-import { VwColabSituacaoNovo } from './employee/VwColabSituacaoNovo';
-import { VwColabDiretor } from './employee/VwColabDiretor';
-import { VwColabGerenteSr } from './employee/VwColabGerenteSr';
-import { VwColabGerente } from './employee/VwColabGerente';
-import { VwColabCoordenador } from './employee/VwColabCoordenador';
-import { VwColabSupervisor } from './employee/VwColabSupervisor';
-import { VwColabGrupo } from './employee/VwColabGrupo';
-import { VwColabEntreGrupo } from './employee/VwColabEntreGrupo';
+import { VwColabEstado } from './employee/vwColabEstado';
+import { VwColabCidade } from './employee/vwColabCidade';
+import { VwColabCargo } from './employee/vwColabCargo';
+import { VwColabCargaHoraria } from './employee/vwColabCargaHoraria';
+import { VwColabSituacaoNovo } from './employee/vwColabSituacaoNovo';
+import { VwColabDiretor } from './employee/vwColabDiretor';
+import { VwColabGerenteSr } from './employee/vwColabGerenteSr';
+import { VwColabGerente } from './employee/vwColabGerente';
+import { VwColabCoordenador } from './employee/vwColabCoordenador';
+import { VwColabSupervisor } from './employee/vwColabSupervisor';
+import { VwColabGrupo } from './employee/vwColabGrupo';
+import { VwColabEntreGrupo } from './employee/vwColabEntreGrupo';
 
 @Component({
     templateUrl: 'app/app.employee.html',

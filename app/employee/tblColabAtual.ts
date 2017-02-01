@@ -1,8 +1,8 @@
-import { TblColabCargo } from '../config/TblColabCargo';
-import { TblColabCidade } from '../config/TblColabCidade';
-import { TblColabEntreGrupo } from '../config/TblColabEntreGrupo';
-import { TblColabGrupo } from '../config/TblColabGrupo';
-import { TblColabSituacao } from '../config/TblColabSituacao';
+import { TblColabCargo } from '../config/tblColabCargo';
+import { TblColabCidade } from '../config/tblColabCidade';
+import { TblColabEntreGrupo } from '../config/tblColabEntreGrupo';
+import { TblColabGrupo } from '../config/tblColabGrupo';
+import { TblColabSituacao } from '../config/tblColabSituacao';
 
 export class tblColabAtual {
     nnomatricula: number;

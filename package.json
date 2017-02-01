@@ -1,5 +1,5 @@
 {
-  "name": "colaboradores-ng",
+  "name": "lde-ng",
   "version": "v1.0.0-SNAPSHOT",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
