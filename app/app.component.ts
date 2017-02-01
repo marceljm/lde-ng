@@ -22,15 +22,18 @@ export class AppComponent {
                 link = ['/validation'];
                 break;
             case 2:
-                link = ['/novo'];
+                link = ['/product'];
                 break;
             case 3:
-                link = ['/config'];
+                link = ['/novo'];
                 break;
             case 4:
-                link = ['/home'];
+                link = ['/config'];
                 break;
             case 5:
+                link = ['/home'];
+                break;
+            case 6:
                 link = ['/hierarquia'];
         }
         this.router.navigate(link);

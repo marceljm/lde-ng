@@ -12,6 +12,7 @@ import { AppEmployee } from './app.employee';
 import { AppComponent } from './app.component';
 import { AppCar } from './app.car';
 import { ValidationDemo } from './ValidationDemo';
+import { AppProduct } from './app.product';
 
 import { CarService } from './cars/carservice';
 
@@ -21,7 +22,7 @@ import { InputTextModule, DataTableModule, ButtonModule, DialogModule, TabViewMo
 
 @NgModule({
     imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, AppRoutingModule, InputTextModule, DataTableModule, ButtonModule, DialogModule, TabViewModule, ChartModule, TreeModule, GrowlModule, InputSwitchModule, BlockUIModule, InputMaskModule, DropdownModule, CalendarModule],
-    declarations: [AppHeader, AppComponent, AppHome, AppTree, AppEmployee, AppConfig, AppCar, ValidationDemo, routedComponents],
+    declarations: [AppHeader, AppComponent, AppHome, AppTree, AppEmployee, AppConfig, AppCar, ValidationDemo, AppProduct, routedComponents],
     bootstrap: [AppHeader, AppComponent],
     providers: [CarService]
 })

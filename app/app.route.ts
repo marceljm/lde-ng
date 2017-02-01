@@ -7,6 +7,7 @@ import { AppEmployee } from './app.employee';
 import { AppConfig } from './app.config';
 import { AppCar } from './app.car';
 import { ValidationDemo } from './validationdemo';
+import { AppProduct } from './app.product';
 
 const routes: Routes = [
     {
@@ -34,8 +35,12 @@ const routes: Routes = [
         component: ValidationDemo
     },
     {
+        path: 'product',
+        component: AppProduct
+    },
+    {
         path: '',
-        redirectTo: '/home',
+        redirectTo: '/car',
         pathMatch: 'full'
     },
 ];
@@ -46,4 +51,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [AppHome, AppTree, AppEmployee, AppConfig, AppCar, ValidationDemo];
+export const routedComponents = [AppHome, AppTree, AppEmployee, AppConfig, AppCar, ValidationDemo, AppProduct];
