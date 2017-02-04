@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import 'rxjs/add/operator/toPromise';
 
@@ -21,7 +21,7 @@ import { AppRoutingModule, routedComponents } from './app.route';
 import { InputTextModule, DataTableModule, ButtonModule, DialogModule, TabViewModule, ChartModule, TreeModule, GrowlModule, InputSwitchModule, BlockUIModule, InputMaskModule, DropdownModule, CalendarModule } from 'primeng/primeng';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, AppRoutingModule, InputTextModule, DataTableModule, ButtonModule, DialogModule, TabViewModule, ChartModule, TreeModule, GrowlModule, InputSwitchModule, BlockUIModule, InputMaskModule, DropdownModule, CalendarModule],
+    imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, AppRoutingModule, InputTextModule, DataTableModule, ButtonModule, DialogModule, TabViewModule, ChartModule, TreeModule, GrowlModule, InputSwitchModule, BlockUIModule, InputMaskModule, DropdownModule, CalendarModule],
     declarations: [AppHeader, AppComponent, AppHome, AppTree, AppEmployee, AppConfig, AppCar, ValidationDemo, AppProduct, routedComponents],
     bootstrap: [AppHeader, AppComponent],
     providers: [CarService]

@@ -24,7 +24,10 @@ export class AppProduct implements OnInit {
     getPage() {
         this.productService.getPage().subscribe(
             page => this.page = page,
-            error => this.errorMessage = <any>error
+            error => this.errorMessage = <any>error,
+            () => {
+                    console.log(this.page);                
+            }            
         )
     }
 }
