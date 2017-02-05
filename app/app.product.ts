@@ -11,7 +11,7 @@ export class AppProduct implements OnInit {
 
     private errorMessage: string;
 
-    page: any;
+    page: Page;
 
     constructor(
         private productService: ProductService) {
@@ -26,8 +26,8 @@ export class AppProduct implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
-                    console.log(this.page);                
-            }            
+                console.log(this.page);
+            }
         )
     }
 }

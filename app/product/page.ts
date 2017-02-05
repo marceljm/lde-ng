@@ -1,6 +1,7 @@
 export class Page {
-    page: number;
     items: number;
-    total: number;
+    page: number;
+    productItems: any;
     query: string;
+    total: number;
 }
