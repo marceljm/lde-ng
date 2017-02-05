@@ -1,7 +1,9 @@
+import { ProductItems } from './productItems';
+
 export class Page {
     items: number;
     page: number;
-    productItems: any;
+    productItems: ProductItems;
     query: string;
     total: number;
 }
