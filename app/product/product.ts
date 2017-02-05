@@ -1,4 +1,5 @@
 import { Image } from './image';
+import { TrackingLinks } from './trackingLinks';
 
 export class Product {
     description: string;
@@ -7,4 +8,5 @@ export class Product {
     merchantCategory: string;
     name: string;
     price: number;
+    trackingLinks: TrackingLinks;
 }
