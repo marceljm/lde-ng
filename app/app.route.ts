@@ -5,13 +5,8 @@ import { AppProduct } from './app.product';
 
 const routes: Routes = [
     {
-        path: 'product',
-        component: AppProduct
-    },
-    {
         path: '',
-        redirectTo: '/product',
-        pathMatch: 'full'
+        component: AppProduct
     },
 ];
 
