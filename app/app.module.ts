@@ -7,17 +7,18 @@ import 'rxjs/add/operator/toPromise';
 import { AppHeader } from './app.header';
 import { AppComponent } from './app.component';
 import { AppProduct } from './app.product';
-
-//import { CarService } from './cars/carservice';
+import { AppCategory } from './app.category';
 
 import { AppRoutingModule, routedComponents } from './app.route';
 
 import { DataGridModule } from 'primeng/primeng';
 
+import { CategoryService } from './category/categoryService';
+
 @NgModule({
     imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, AppRoutingModule, DataGridModule],
-    declarations: [AppHeader, AppComponent, AppProduct, routedComponents],
+    declarations: [AppHeader, AppComponent, AppProduct, AppCategory, routedComponents],
     bootstrap: [AppHeader, AppComponent],
-    //providers: [CarService]
+    providers: [CategoryService]
 })
 export class AppModule { }

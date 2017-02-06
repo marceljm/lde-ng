@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AppCategory } from './app.category';
 import { AppProduct } from './app.product';
 
 const routes: Routes = [
     {
-        path: '',
+        path: 'product',
         component: AppProduct
+    },
+    {
+        path: '',
+        component: AppCategory
     },
 ];
 
@@ -16,4 +21,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [AppProduct];
+export const routedComponents = [AppProduct, AppCategory];

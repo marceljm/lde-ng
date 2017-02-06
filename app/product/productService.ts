@@ -10,7 +10,7 @@ import { Jsonp } from '@angular/http';
 export class ProductService {
 
     private urlPage = 'http://api.zanox.com/json/2011-03-01/products?q=iphone&connectid=D288A5846EE8D7A640D4&programs=12011&callback=JSONP_CALLBACK';
-    private urlProgeam = 'http://api.zanox.com/json/2011-03-01/programs?startdate=2012-06-01&partnership=DIRECT&region=BR&connectid=580599047DF8F5311043';
+    //private urlProgram = 'http://api.zanox.com/json/2011-03-01/programs?startdate=2012-06-01&partnership=DIRECT&region=BR&connectid=580599047DF8F5311043';
 
     constructor(private _jsonp: Jsonp) { }
 
