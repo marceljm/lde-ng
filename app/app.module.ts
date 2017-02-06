@@ -11,12 +11,12 @@ import { AppCategory } from './app.category';
 
 import { AppRoutingModule, routedComponents } from './app.route';
 
-import { DataGridModule } from 'primeng/primeng';
+import { DataGridModule, PanelModule, ButtonModule } from 'primeng/primeng';
 
 import { CategoryService } from './category/categoryService';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, AppRoutingModule, DataGridModule],
+    imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, AppRoutingModule, DataGridModule, PanelModule, ButtonModule],
     declarations: [AppHeader, AppComponent, AppProduct, AppCategory, routedComponents],
     bootstrap: [AppHeader, AppComponent],
     providers: [CategoryService]

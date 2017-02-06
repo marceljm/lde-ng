@@ -13,16 +13,6 @@
   <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
   <link rel="stylesheet" type="text/css" href="app/resources/css/font.css" />
 
-  <style>
-    #loader {
-      background: -webkit-linear-gradient(-45deg, red, black);
-      background: -o-linear-gradient(-45deg, red, black);
-      background: -moz-linear-gradient(-45deg, red,black);
-      background: linear-gradient(-45deg, red,black);
-      height: 100%;
-    }
-  </style>
-
   <!-- 1. Load libraries -->
   <!-- Polyfill(s) for older browsers -->
   <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -34,20 +24,16 @@
   <!-- 2. Configure SystemJS -->
   <script src="systemjs.config.js"></script>
   <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
+    System.import('app').catch(function (err) { console.error(err); });
+  </script>
 </head>
 
 <!-- 3. Display the application -->
 
 <body id="body" style="margin:0; padding:0;">
-  <div id="loader">
-  </div>
-  <div id="app" style="display:none">
-    <header-app>
-    </header-app>
-    <my-app></my-app>
-  </div>
+  <header-app>
+  </header-app>
+  <my-app></my-app>
 </body>
 
 </html>

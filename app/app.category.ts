@@ -3,7 +3,7 @@ import { CategoryService } from './category/categoryService';
 import { Category } from './category/category';
 
 class MyCategory implements Category {
-    constructor(public name) { }
+    constructor(public name, public icon) { }
 }
 
 @Component({

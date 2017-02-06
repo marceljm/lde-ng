@@ -1,97 +1,128 @@
 {
     "data": [
         {
-            "name": "Acessórios de Tecnologia"
+            "name": "Acessórios de Tecnologia",
+            "icon": "app/resources/images/headphones.png"
         },
         {
-            "name": "Alimentos e Bebidas"
+            "name": "Alimentos e Bebidas",
+            "icon": "app/resources/images/beverage.png"
         },
         {
-            "name": "Automotivo"
+            "name": "Automotivo",
+            "icon": "app/resources/images/car.png"
         },
         {
-            "name": "Bebês e Crianças"
+            "name": "Bebês e Crianças",
+            "icon": "app/resources/images/babyCarriage.png"
         },
         {
-            "name": "Beleza"
+            "name": "Beleza",
+            "icon": "app/resources/images/hairdryer.png"
         },
         {
-            "name": "Brinquedos"
+            "name": "Brinquedos",
+            "icon": "app/resources/images/toy.png"
         },
         {
-            "name": "Cama Mesa e Banho"
+            "name": "Cama Mesa e Banho",
+            "icon": "app/resources/images/table.png"
         },
         {
-            "name": "Câmeras e Filmadoras"
+            "name": "Câmeras e Filmadoras",
+            "icon": "app/resources/images/camera.png"
         },
         {
-            "name": "Casa e Segurança"
+            "name": "Casa e Segurança",
+            "icon": "app/resources/images/house.png"
         },
         {
-            "name": "CDs DVDs e Blu-Rays"
+            "name": "CDs DVDs e Blu-Rays",
+            "icon": "app/resources/images/blu-ray.png"
         },
         {
-            "name": "Cuidados com a Saúde"
+            "name": "Cuidados com a Saúde",
+            "icon": "app/resources/images/readingGlasses.png"
         },
         {
-            "name": "Eletrodomésticos"
+            "name": "Eletrodomésticos",
+            "icon": "app/resources/images/houseAppliances.png"
         },
         {
-            "name": "Eletrônicos"
+            "name": "Eletrônicos",
+            "icon": "app/resources/images/tv.png"
         },
         {
-            "name": "Eletroportáteis"
+            "name": "Eletroportáteis",
+            "icon": "app/resources/images/coffeeMaker.png"
         },
         {
-            "name": "Esporte e Lazer"
+            "name": "Esporte e Lazer",
+            "icon": "app/resources/images/ball.png"
         },
         {
-            "name": "Ferramentas e Jardim"
+            "name": "Ferramentas e Jardim",
+            "icon": "app/resources/images/toolBox.png"
         },
         {
-            "name": "Games"
+            "name": "Games",
+            "icon": "app/resources/images/joystick.png"
         },
         {
-            "name": "Informática"
+            "name": "Informática",
+            "icon": "app/resources/images/pc.png"
         },
         {
-            "name": "Instrumentos Musicais"
+            "name": "Instrumentos Musicais",
+            "icon": "app/resources/images/guitar.png"
         },
         {
-            "name": "Moda"
+            "name": "Moda",
+            "icon": "app/resources/images/t-shirt.png"
         },
         {
-            "name": "Móveis e Decoração"
+            "name": "Móveis e Decoração",
+            "icon": "app/resources/images/chair.png"
         },
         {
-            "name": "Papelaria"
+            "name": "Papelaria",
+            "icon": "app/resources/images/notebook.png"
         },
         {
-            "name": "Perfumaria e Cosméticos"
+            "name": "Perfumaria e Cosméticos",
+            "icon": "app/resources/images/perfume.png"
         },
         {
-            "name": "Pet shop"
+            "name": "Pet shop",
+            "icon": "app/resources/images/dog.png"
         },
         {
-            "name": "Produtos para Limpeza"
+            "name": "Produtos para Limpeza",
+            "icon": "app/resources/images/cleaningProducts.png"
         },
         {
-            "name": "Produtos sustentáveis"
+            "name": "Produtos sustentáveis",
+            "icon": "app/resources/images/sustainable.png"
         },
         {
-            "name": "Relógios e Joias"
+            "name": "Relógios e Joias",
+            "icon": "app/resources/images/watch.png"
         },
         {
-            "name": "Serviços"
+            "name": "Serviços",
+            "icon": "app/resources/images/service.png"
         },
         {
-            "name": "Tablets"
+            "name": "Tablets",
+            "icon": "app/resources/images/tablet.png"
         },
         {
-            "name": "Telefonia"
+            "name": "Telefonia",
+            "icon": "app/resources/images/iphone.png"
         },
         {
-            "name": "Utilidades domésticas"
+            "name": "Utilidades domésticas",
+            "icon": "app/resources/images/pan.png"
         }
     ]
 }

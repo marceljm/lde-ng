@@ -4,13 +4,4 @@ import { Component } from '@angular/core';
     templateUrl: 'app/app.header.html',
     selector: 'header-app'
 })
-export class AppHeader {
-
-    ngOnInit() {
-        setTimeout(() => {
-            document.getElementById("loader").setAttribute("style", "display:none");
-            document.getElementById("app").setAttribute("style", "display:true");
-        }, 1000);
-    }
-
-}
+export class AppHeader { }
