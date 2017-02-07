@@ -2,126 +2,195 @@
     "data": [
         {
             "name": "Acessórios de Tecnologia",
-            "icon": "app/resources/images/headphones.png"
+            "link": "acessorios-de-tecnologia",
+            "icon": "app/resources/images/headphones.png",
+            "subcategory": [
+                {
+                    "name": "Acessório Áudio Portátil Fones Ouvido"
+                },
+                {
+                    "name": "Acessório Celulares Smartphones"
+                },
+                {
+                    "name": "Acessório Escritório"
+                },
+                {
+                    "name": "Acessório Games"
+                },
+                {
+                    "name": "Acessório Peças Componentes Computador"
+                },
+                {
+                    "name": "Acessório Periféricos Informática"
+                },
+                {
+                    "name": "Acessório Projeção e Imagem"
+                },
+                {
+                    "name": "Acessórios Câmeras e Filmadoras"
+                },
+                {
+                    "name": "Acessórios Rádio de Comunicação"
+                },
+                {
+                    "name": "Acessório Tablets"
+                },
+                {
+                    "name": "Acessório Telefones Fixos"
+                },
+                {
+                    "name": "Acessório Televisão Home Theaters"
+                }
+            ]
         },
         {
             "name": "Alimentos e Bebidas",
+            "link": "alimentos-e-bebidas",
             "icon": "app/resources/images/beverage.png"
         },
         {
             "name": "Automotivo",
+            "link": "automotivo",
             "icon": "app/resources/images/car.png"
         },
         {
             "name": "Bebês e Crianças",
+            "link": "bebes-e-criancas",
             "icon": "app/resources/images/babyCarriage.png"
         },
         {
             "name": "Beleza",
+            "link": "beleza",
             "icon": "app/resources/images/hairdryer.png"
         },
         {
             "name": "Brinquedos",
+            "link": "brinquedos",
             "icon": "app/resources/images/toy.png"
         },
         {
             "name": "Cama Mesa e Banho",
+            "link": "cama-mesa-e-banho",
             "icon": "app/resources/images/table.png"
         },
         {
             "name": "Câmeras e Filmadoras",
+            "link": "cameras-e-filmadoras",
             "icon": "app/resources/images/camera.png"
         },
         {
             "name": "Casa e Segurança",
+            "link": "casa-e-seguranca",
             "icon": "app/resources/images/house.png"
         },
         {
             "name": "CDs DVDs e Blu-Rays",
+            "link": "cds-dvds-e-blu-rays",
             "icon": "app/resources/images/blu-ray.png"
         },
         {
             "name": "Cuidados com a Saúde",
+            "link": "cuidados-com-a-saude",
             "icon": "app/resources/images/readingGlasses.png"
         },
         {
             "name": "Eletrodomésticos",
+            "link": "eletrodomesticos",
             "icon": "app/resources/images/houseAppliances.png"
         },
         {
             "name": "Eletrônicos",
+            "link": "eletronicos",
             "icon": "app/resources/images/tv.png"
         },
         {
             "name": "Eletroportáteis",
+            "link": "eletroportateis",
             "icon": "app/resources/images/coffeeMaker.png"
         },
         {
             "name": "Esporte e Lazer",
+            "link": "esporte-e-lazer",
             "icon": "app/resources/images/ball.png"
         },
         {
             "name": "Ferramentas e Jardim",
+            "link": "ferramentas-e-jardim",
             "icon": "app/resources/images/toolBox.png"
         },
         {
             "name": "Games",
+            "link": "games",
             "icon": "app/resources/images/joystick.png"
         },
         {
             "name": "Informática",
+            "link": "informatica",
             "icon": "app/resources/images/pc.png"
         },
         {
             "name": "Instrumentos Musicais",
+            "link": "instrumentos-musicais",
             "icon": "app/resources/images/guitar.png"
         },
         {
             "name": "Moda",
+            "link": "moda",
             "icon": "app/resources/images/t-shirt.png"
         },
         {
             "name": "Móveis e Decoração",
+            "link": "moveis-e-decoracao",
             "icon": "app/resources/images/chair.png"
         },
         {
             "name": "Papelaria",
+            "link": "papelaria",
             "icon": "app/resources/images/notebook.png"
         },
         {
             "name": "Perfumaria e Cosméticos",
+            "link": "perfumaria-e-cosmeticos",
             "icon": "app/resources/images/perfume.png"
         },
         {
             "name": "Pet shop",
+            "link": "pet-shop",
             "icon": "app/resources/images/dog.png"
         },
         {
             "name": "Produtos para Limpeza",
+            "link": "produtos-para-limpeza",
             "icon": "app/resources/images/cleaningProducts.png"
         },
         {
             "name": "Produtos sustentáveis",
+            "link": "produtos-sustentaveis",
             "icon": "app/resources/images/sustainable.png"
         },
         {
             "name": "Relógios e Joias",
+            "link": "relogios-e-joias",
             "icon": "app/resources/images/watch.png"
         },
         {
             "name": "Serviços",
+            "link": "servicos",
             "icon": "app/resources/images/service.png"
         },
         {
             "name": "Tablets",
+            "link": "tablets",
             "icon": "app/resources/images/tablet.png"
         },
         {
             "name": "Telefonia",
+            "link": "telefonia",
             "icon": "app/resources/images/iphone.png"
         },
         {
             "name": "Utilidades domésticas",
+            "link": "utilidades-domesticas",
             "icon": "app/resources/images/pan.png"
         }
     ]

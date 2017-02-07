@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppCategory } from './app.category';
 import { AppProduct } from './app.product';
+import { AppHeader } from './app.header';
 
 const routes: Routes = [
     {
@@ -13,6 +14,15 @@ const routes: Routes = [
         path: '',
         component: AppCategory
     },
+    {
+        path: '',
+        children: [
+            {
+                path: ':name',
+                component: AppHeader
+            }
+        ],
+    },
 ];
 
 @NgModule({
@@ -21,4 +31,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [AppProduct, AppCategory];
+export const routedComponents = [AppProduct, AppCategory, AppHeader];
