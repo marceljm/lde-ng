@@ -1,10 +1,10 @@
-<p-dataGrid [value]="categories" *ngIf="this.router.url != '/'">
-    <p-header>{{this.router.url}}</p-header>
-    <template let-category pTemplate="item">
-        <div class="ui-g-12 ui-md-2">
-            <p-panel [header]="category.name">
+<p-dataGrid [value]="getSubcategories()" *ngIf="getLink()">
+    <p-header>{{getName()}}</p-header>
+    <template let-subcategory pTemplate="item">
+        <div class="ui-g-12 ui-md-4">
+            <p-panel [header]="">
                 <div style="text-align: center">
-                    <img [src]="category.icon" (click)="navigate(category.link)">
+                    {{subcategory}}
                 </div>
             </p-panel>
         </div>

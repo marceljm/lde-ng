@@ -11,6 +11,7 @@ export class AppCategory implements OnInit {
 
     categories: Category[];
     categoryMap: Map<string, string[]> = new Map<string, string[]>();
+    nameLinkMap: Map<string, string> = new Map<string, string>();
 
     constructor(private categoryService: CategoryService, private router: Router) { }
 
@@ -20,6 +21,8 @@ export class AppCategory implements OnInit {
         ).then(
             () => {
                 for (let entry of this.categories) {
+                    this.nameLinkMap.set(entry.link, entry.name);
+
                     let subcategoryList: Array<string> = new Array<string>();
                     if (entry.subcategory) {
                         for (let entry2 of entry.subcategory) {
@@ -31,9 +34,19 @@ export class AppCategory implements OnInit {
             });
     }
 
-    //console.log(this.categoryMap.get("acessorios-de-tecnologia"));
-
     navigate(link) {
-        this.router.navigate(['/' + link]);
+        this.router.navigate([link]);
+    }
+
+    getLink() {
+        return this.router.url.replace('/', '');
+    }
+
+    getSubcategories() {
+        return this.categoryMap.get(this.getLink());
+    }
+
+    getName() {
+        return this.nameLinkMap.get(this.getLink());
     }
 }
