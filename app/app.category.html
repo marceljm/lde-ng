@@ -4,7 +4,7 @@
         <div class="ui-g-12 ui-md-2">
             <p-panel [header]="category.name">
                 <div style="text-align: center">
-                    <a [href]="category.link"><img [src]="category.icon"></a>
+                    <img [src]="category.icon" (click)="navigate(category.link)">
                 </div>
             </p-panel>
         </div>
