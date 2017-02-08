@@ -46,152 +46,1391 @@
         {
             "name": "Alimentos e Bebidas",
             "link": "alimentos-e-bebidas",
-            "icon": "app/resources/images/beverage.png"
+            "icon": "app/resources/images/beverage.png",
+            "subcategory": [
+                {
+                    "name": "Bebidas Não Alcoólicas"
+                },
+                {
+                    "name": "Biscoitos Salgados e Snacks"
+                },
+                {
+                    "name": "Bomboniere"
+                },
+                {
+                    "name": "Cafés Chás e Achocolatados"
+                },
+                {
+                    "name": "Condimentos Ervas e Especiarias"
+                },
+                {
+                    "name": "Doces e Sobremesas"
+                },
+                {
+                    "name": "Enlatados e Conservas"
+                },
+                {
+                    "name": "Frios e Laticínios"
+                },
+                {
+                    "name": "Grãos e Sementes"
+                },
+                {
+                    "name": "Massas"
+                },
+                {
+                    "name": "Padaria"
+                }
+            ]
         },
         {
             "name": "Automotivo",
             "link": "automotivo",
-            "icon": "app/resources/images/car.png"
+            "icon": "app/resources/images/car.png",
+            "subcategory": [
+                {
+                    "name": "Acabamento"
+                },
+                {
+                    "name": "Acessórios"
+                },
+                {
+                    "name": "Áudio e Vídeo"
+                },
+                {
+                    "name": "Elétrico"
+                },
+                {
+                    "name": "GPS e Acessórios"
+                },
+                {
+                    "name": "Iluminação"
+                },
+                {
+                    "name": "Itens de Autopeças"
+                },
+                {
+                    "name": "Limpeza"
+                },
+                {
+                    "name": "Motociclismo"
+                },
+                {
+                    "name": "Óleos e Fluídos"
+                },
+                {
+                    "name": "Peças"
+                },
+                {
+                    "name": "Pneus"
+                },
+                {
+                    "name": "Rodas e Calotas"
+                },
+                {
+                    "name": "Serviços"
+                },
+                {
+                    "name": "Vidros"
+                }
+            ]
         },
         {
             "name": "Bebês e Crianças",
             "link": "bebes-e-criancas",
-            "icon": "app/resources/images/babyCarriage.png"
+            "icon": "app/resources/images/babyCarriage.png",
+            "subcategory": [
+                {
+                    "name": "Alimentação"
+                },
+                {
+                    "name": "Brinquedos e Diversão"
+                },
+                {
+                    "name": "Higiene e Cuidados"
+                },
+                {
+                    "name": "Hora da Troca"
+                },
+                {
+                    "name": "Moda Bebê"
+                },
+                {
+                    "name": "Moda Gestante"
+                },
+                {
+                    "name": "Moda Infantil"
+                },
+                {
+                    "name": "Móveis Bebê"
+                },
+                {
+                    "name": "Passeio"
+                },
+                {
+                    "name": "Quarto e Decoração"
+                },
+                {
+                    "name": "Saúde e Bem-Estar"
+                },
+                {
+                    "name": "Segurança"
+                }
+            ]
         },
         {
             "name": "Beleza",
             "link": "beleza",
-            "icon": "app/resources/images/hairdryer.png"
+            "icon": "app/resources/images/hairdryer.png",
+            "subcategory": [
+                {
+                    "name": "Barbearia"
+                },
+                {
+                    "name": "Cuidados Cabelos"
+                },
+                {
+                    "name": "Cuidados Diários"
+                },
+                {
+                    "name": "Depilação"
+                },
+                {
+                    "name": "Mãos e Pés"
+                },
+                {
+                    "name": "Perfumaria e Cosméticos"
+                },
+                {
+                    "name": "Salão de Beleza"
+                }
+            ]
         },
         {
             "name": "Brinquedos",
             "link": "brinquedos",
-            "icon": "app/resources/images/toy.png"
+            "icon": "app/resources/images/toy.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Piscina e Praia"
+                },
+                {
+                    "name": "Artes e Atividades"
+                },
+                {
+                    "name": "Artigos de Festa"
+                },
+                {
+                    "name": "Autopistas e Ferropistas"
+                },
+                {
+                    "name": "Bebês"
+                },
+                {
+                    "name": "Bicicletas e Acessórios"
+                },
+                {
+                    "name": "Blocos de Montar"
+                },
+                {
+                    "name": "Bolas"
+                },
+                {
+                    "name": "Bonecas"
+                },
+                {
+                    "name": "Bonecos e Playsets"
+                },
+                {
+                    "name": "Brincadeiras e Faz de Conta"
+                },
+                {
+                    "name": "Brinquedos de Ação"
+                },
+                {
+                    "name": "Brinquedos e Diversão"
+                },
+                {
+                    "name": "Brinquedos Eletrônicos"
+                },
+                {
+                    "name": "Brinquedos Exclusivos"
+                },
+                {
+                    "name": "Brinquedos para Playground"
+                },
+                {
+                    "name": "Central de Presentes"
+                },
+                {
+                    "name": "Colecionáveis"
+                },
+                {
+                    "name": "Controle Remoto"
+                },
+                {
+                    "name": "Educativos e Pré-escolares"
+                },
+                {
+                    "name": "Escolar"
+                },
+                {
+                    "name": "Esportes"
+                },
+                {
+                    "name": "Fantasias e Acessórios"
+                },
+                {
+                    "name": "Infláveis"
+                },
+                {
+                    "name": "Instrumentos Musicais"
+                },
+                {
+                    "name": "Jogos"
+                },
+                {
+                    "name": "Laptop Infantil"
+                },
+                {
+                    "name": "Livros CDs e DVDs"
+                },
+                {
+                    "name": "Mágicas e Ciências"
+                },
+                {
+                    "name": "Maquiagem e Beleza"
+                },
+                {
+                    "name": "Massinhas e Pintura"
+                },
+                {
+                    "name": "Mini Veículos"
+                },
+                {
+                    "name": "Modelismo"
+                },
+                {
+                    "name": "Móveis e Decoração"
+                },
+                {
+                    "name": "Para Crianças Especiais"
+                },
+                {
+                    "name": "Patins & Patinete & Skate"
+                },
+                {
+                    "name": "Pelúcias"
+                },
+                {
+                    "name": "Piscina de Bolinhas e Tocas"
+                },
+                {
+                    "name": "Pista e Carrinho"
+                },
+                {
+                    "name": "Quebra-cabeça"
+                },
+                {
+                    "name": "Videogames"
+                }
+            ]
         },
         {
             "name": "Cama Mesa e Banho",
             "link": "cama-mesa-e-banho",
-            "icon": "app/resources/images/table.png"
+            "icon": "app/resources/images/table.png",
+            "subcategory": [
+                {
+                    "name": "Banho"
+                },
+                {
+                    "name": "Cama"
+                },
+                {
+                    "name": "Decoração"
+                },
+                {
+                    "name": "Mesa"
+                }
+            ]
         },
         {
             "name": "Câmeras e Filmadoras",
             "link": "cameras-e-filmadoras",
-            "icon": "app/resources/images/camera.png"
+            "icon": "app/resources/images/camera.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Câmeras e Filmadoras"
+                },
+                {
+                    "name": "Binóculos"
+                },
+                {
+                    "name": "Câmeras digitais"
+                },
+                {
+                    "name": "Câmeras instantâneas"
+                },
+                {
+                    "name": "Drones"
+                },
+                {
+                    "name": "Filmadoras digitais"
+                },
+                {
+                    "name": "Flashes"
+                },
+                {
+                    "name": "Lentes"
+                },
+                {
+                    "name": "Lunetas"
+                },
+                {
+                    "name": "Porta-Retratos digitais"
+                },
+                {
+                    "name": "Telescópios"
+                }
+            ]
         },
         {
             "name": "Casa e Segurança",
             "link": "casa-e-seguranca",
-            "icon": "app/resources/images/house.png"
+            "icon": "app/resources/images/house.png",
+            "subcategory": [
+                {
+                    "name": "Acessibilidade"
+                },
+                {
+                    "name": "Alarmes e Sensores"
+                },
+                {
+                    "name": "Ambientes"
+                },
+                {
+                    "name": "Aquecedores de Água e Chuveiros"
+                },
+                {
+                    "name": "Banheiros"
+                },
+                {
+                    "name": "Campainha"
+                },
+                {
+                    "name": "Cerca Elétrica"
+                },
+                {
+                    "name": "Climatização"
+                },
+                {
+                    "name": "Cofre"
+                },
+                {
+                    "name": "Corrente e Cadeado"
+                },
+                {
+                    "name": "Cozinhas"
+                },
+                {
+                    "name": "Cuidados para o Lar"
+                },
+                {
+                    "name": "DVR e Sequencial"
+                },
+                {
+                    "name": "Fechaduras"
+                },
+                {
+                    "name": "Ferragens"
+                },
+                {
+                    "name": "Fios e Cabos"
+                },
+                {
+                    "name": "Gerador de Energia"
+                },
+                {
+                    "name": "Grades e Extensores"
+                },
+                {
+                    "name": "Iluminação"
+                },
+                {
+                    "name": "Interfone"
+                },
+                {
+                    "name": "Jardim"
+                },
+                {
+                    "name": "Lavanderia"
+                },
+                {
+                    "name": "Linha de Segurança Profissional"
+                },
+                {
+                    "name": "Manutenção"
+                },
+                {
+                    "name": "Materiais de Construção"
+                },
+                {
+                    "name": "Materiais Elétricos"
+                },
+                {
+                    "name": "Materiais Hidráulicos"
+                },
+                {
+                    "name": "Metais e Acessórios"
+                },
+                {
+                    "name": "Pintura"
+                },
+                {
+                    "name": "Pisos e Revestimentos"
+                },
+                {
+                    "name": "Portas e Janelas"
+                },
+                {
+                    "name": "Porteiro Eletrônico e Vídeo Porteiro"
+                },
+                {
+                    "name": "Portões Automáticos"
+                },
+                {
+                    "name": "Segurança"
+                },
+                {
+                    "name": "Segurança do Trabalho"
+                },
+                {
+                    "name": "Sinalização"
+                },
+                {
+                    "name": "Tintas e Acessórios"
+                },
+                {
+                    "name": "Torneiras"
+                }
+            ]
         },
         {
             "name": "CDs DVDs e Blu-Rays",
             "link": "cds-dvds-e-blu-rays",
-            "icon": "app/resources/images/blu-ray.png"
+            "icon": "app/resources/images/blu-ray.png",
+            "subcategory": [
+                {
+                    "name": "Colecionáveis"
+                },
+                {
+                    "name": "Filmes"
+                },
+                {
+                    "name": "Música"
+                }
+            ]
         },
         {
             "name": "Cuidados com a Saúde",
             "link": "cuidados-com-a-saude",
-            "icon": "app/resources/images/readingGlasses.png"
+            "icon": "app/resources/images/readingGlasses.png",
+            "subcategory": [
+                {
+                    "name": "Aparelhos e Testes"
+                },
+                {
+                    "name": "Conforto do Paciente"
+                },
+                {
+                    "name": "Diabetes"
+                },
+                {
+                    "name": "Equipamentos e Vestuários Médicos"
+                },
+                {
+                    "name": "Fisioterapia e Avaliação Física"
+                },
+                {
+                    "name": "Higiene Bucal"
+                },
+                {
+                    "name": "Hospitais e Clínicas"
+                },
+                {
+                    "name": "Inaloterapia"
+                },
+                {
+                    "name": "Incontinência Urinária"
+                },
+                {
+                    "name": "Massagem e Relaxamento"
+                },
+                {
+                    "name": "Mobilidade"
+                },
+                {
+                    "name": "Ortopedia"
+                },
+                {
+                    "name": "Ótica"
+                },
+                {
+                    "name": "Primeiros Socorros"
+                },
+                {
+                    "name": "Saúde Sexual"
+                },
+                {
+                    "name": "Vitaminas e Suplementos"
+                }
+            ]
         },
         {
             "name": "Eletrodomésticos",
             "link": "eletrodomesticos",
-            "icon": "app/resources/images/houseAppliances.png"
+            "icon": "app/resources/images/houseAppliances.png",
+            "subcategory": [
+                {
+                    "name": "Adegas para Vinho"
+                },
+                {
+                    "name": "Ar Condicionado"
+                },
+                {
+                    "name": "Churrasqueiras"
+                },
+                {
+                    "name": "Climatizadores"
+                },
+                {
+                    "name": "Coifas e Depuradores"
+                },
+                {
+                    "name": "Comercial e Industrial"
+                },
+                {
+                    "name": "Cooktops"
+                },
+                {
+                    "name": "Fogões"
+                },
+                {
+                    "name": "Fornos"
+                },
+                {
+                    "name": "Freezers"
+                },
+                {
+                    "name": "Lavadoras de Roupas"
+                },
+                {
+                    "name": "Lava-Louças"
+                },
+                {
+                    "name": "Micro-ondas"
+                },
+                {
+                    "name": "Refrigeradores"
+                },
+                {
+                    "name": "Secadoras de Roupas"
+                },
+                {
+                    "name": "Serviços"
+                }
+            ]
         },
         {
             "name": "Eletrônicos",
             "link": "eletronicos",
-            "icon": "app/resources/images/tv.png"
+            "icon": "app/resources/images/tv.png",
+            "subcategory": [
+                {
+                    "name": "Áudio"
+                },
+                {
+                    "name": "Caixas de Som e Dock Stations"
+                },
+                {
+                    "name": "DVDs e Blu-Ray Players"
+                },
+                {
+                    "name": "Home Theaters e SoundBar"
+                },
+                {
+                    "name": "Mini e Micro-systems"
+                },
+                {
+                    "name": "TVs"
+                },
+                {
+                    "name": "Vitrolas Toca-Discos"
+                }
+            ]
         },
         {
             "name": "Eletroportáteis",
             "link": "eletroportateis",
-            "icon": "app/resources/images/coffeeMaker.png"
+            "icon": "app/resources/images/coffeeMaker.png",
+            "subcategory": [
+                {
+                    "name": "Aquecedores de Ambiente"
+                },
+                {
+                    "name": "Cozinha"
+                },
+                {
+                    "name": "Exaustor"
+                },
+                {
+                    "name": "Lavanderia"
+                },
+                {
+                    "name": "Limpeza"
+                },
+                {
+                    "name": "Máquina de Costura"
+                },
+                {
+                    "name": "Ventilador"
+                }
+            ]
         },
         {
             "name": "Esporte e Lazer",
             "link": "esporte-e-lazer",
-            "icon": "app/resources/images/ball.png"
+            "icon": "app/resources/images/ball.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios Esportivos"
+                },
+                {
+                    "name": "Artes Marciais"
+                },
+                {
+                    "name": "Camping e Aventura"
+                },
+                {
+                    "name": "Ciclismo e Bikes"
+                },
+                {
+                    "name": "Corrida"
+                },
+                {
+                    "name": "Fitness e Musculação"
+                },
+                {
+                    "name": "Futebol"
+                },
+                {
+                    "name": "Jogos"
+                },
+                {
+                    "name": "Mochilas Malas e Bolsas"
+                },
+                {
+                    "name": "Motorsport"
+                },
+                {
+                    "name": "Natação"
+                },
+                {
+                    "name": "Outros Esportes"
+                },
+                {
+                    "name": "Praia e Piscina"
+                },
+                {
+                    "name": "Roupas Esportivas"
+                },
+                {
+                    "name": "Serviços"
+                },
+                {
+                    "name": "Skate e Patins"
+                },
+                {
+                    "name": "Suplementos"
+                },
+                {
+                    "name": "Tênis e Calçados"
+                },
+                {
+                    "name": "Tênis e Squash"
+                }
+            ]
         },
         {
             "name": "Ferramentas e Jardim",
             "link": "ferramentas-e-jardim",
-            "icon": "app/resources/images/toolBox.png"
+            "icon": "app/resources/images/toolBox.png",
+            "subcategory": [
+                {
+                    "name": "Bombas dÁgua"
+                },
+                {
+                    "name": "Compressores e Pistolas de Ar"
+                },
+                {
+                    "name": "Construção Civil"
+                },
+                {
+                    "name": "Corte e Desbaste"
+                },
+                {
+                    "name": "Elevação e Transporte de Cargas"
+                },
+                {
+                    "name": "Escadas e Banquetas"
+                },
+                {
+                    "name": "Ferramentas Manuais"
+                },
+                {
+                    "name": "Fixação e Perfuração"
+                },
+                {
+                    "name": "Jardinagem"
+                },
+                {
+                    "name": "Lavadoras de Alta Pressão"
+                },
+                {
+                    "name": "Limpeza"
+                },
+                {
+                    "name": "Lubrificantes e Químicos"
+                },
+                {
+                    "name": "Medição e Precisão"
+                },
+                {
+                    "name": "Motores e Acessórios"
+                },
+                {
+                    "name": "Organização"
+                },
+                {
+                    "name": "Soldagem"
+                }
+            ]
         },
         {
             "name": "Games",
             "link": "games",
-            "icon": "app/resources/images/joystick.png"
+            "icon": "app/resources/images/joystick.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Games"
+                },
+                {
+                    "name": "Cards"
+                },
+                {
+                    "name": "Colecionáveis"
+                },
+                {
+                    "name": "Game Boy Advanced"
+                },
+                {
+                    "name": "Game Cube"
+                },
+                {
+                    "name": "Nintendo 3DS"
+                },
+                {
+                    "name": "Nintendo DS"
+                },
+                {
+                    "name": "Nintendo Wii"
+                },
+                {
+                    "name": "Nintendo Wii U"
+                },
+                {
+                    "name": "Outros Consoles"
+                },
+                {
+                    "name": "PC e MAC"
+                },
+                {
+                    "name": "Playstation 2"
+                },
+                {
+                    "name": "Playstation 3"
+                },
+                {
+                    "name": "Playstation 4"
+                },
+                {
+                    "name": "Pré Venda"
+                },
+                {
+                    "name": "PSP"
+                },
+                {
+                    "name": "PS Vita"
+                },
+                {
+                    "name": "Tec Toy"
+                },
+                {
+                    "name": "Xbox 360"
+                },
+                {
+                    "name": "Xbox One"
+                }
+            ]
         },
         {
             "name": "Informática",
             "link": "informatica",
-            "icon": "app/resources/images/pc.png"
+            "icon": "app/resources/images/pc.png",
+            "subcategory": [
+                {
+                    "name": "Computadores e All in One"
+                },
+                {
+                    "name": "Impressão"
+                },
+                {
+                    "name": "Mídias"
+                },
+                {
+                    "name": "Monitores"
+                },
+                {
+                    "name": "Notebooks e Conversíveis"
+                },
+                {
+                    "name": "Peças e Componentes de Computador"
+                },
+                {
+                    "name": "Periféricos de Informática"
+                },
+                {
+                    "name": "Projeção e Imagem"
+                },
+                {
+                    "name": "Proteção de Tablets"
+                },
+                {
+                    "name": "Serviços"
+                },
+                {
+                    "name": "Suprimentos"
+                },
+                {
+                    "name": "Tablets"
+                }
+            ]
         },
         {
             "name": "Instrumentos Musicais",
             "link": "instrumentos-musicais",
-            "icon": "app/resources/images/guitar.png"
+            "icon": "app/resources/images/guitar.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios de Áudio"
+                },
+                {
+                    "name": "Acessórios para Estúdio"
+                },
+                {
+                    "name": "Ensino Musical"
+                },
+                {
+                    "name": "Equipamentos de Áudio"
+                },
+                {
+                    "name": "Equipamentos para DJ"
+                },
+                {
+                    "name": "Fones de Ouvido"
+                },
+                {
+                    "name": "Iluminação"
+                },
+                {
+                    "name": "Instrumentos de Corda"
+                },
+                {
+                    "name": "Instrumentos de Percussão"
+                },
+                {
+                    "name": "Instrumentos de Sopro"
+                },
+                {
+                    "name": "Instrumentos de Teclas"
+                },
+                {
+                    "name": "Instrumentos Infantis"
+                },
+                {
+                    "name": "Processadores de Áudio"
+                },
+                {
+                    "name": "Softwares"
+                }
+            ]
         },
         {
             "name": "Moda",
             "link": "moda",
-            "icon": "app/resources/images/t-shirt.png"
+            "icon": "app/resources/images/t-shirt.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios"
+                },
+                {
+                    "name": "Bolsas e Acessórios"
+                },
+                {
+                    "name": "Calçados"
+                },
+                {
+                    "name": "Fantasias"
+                },
+                {
+                    "name": "Malas Sacolas e Mochilas"
+                },
+                {
+                    "name": "Moda feminina"
+                },
+                {
+                    "name": "Moda Infantil"
+                },
+                {
+                    "name": "Moda íntima"
+                },
+                {
+                    "name": "Moda masculina"
+                },
+                {
+                    "name": "Moda praia"
+                },
+                {
+                    "name": "Óculos"
+                },
+                {
+                    "name": "Plus Size"
+                },
+                {
+                    "name": "Relógios e Joias"
+                }
+            ]
         },
         {
             "name": "Móveis e Decoração",
             "link": "moveis-e-decoracao",
-            "icon": "app/resources/images/chair.png"
+            "icon": "app/resources/images/chair.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios"
+                },
+                {
+                    "name": "Área Externa"
+                },
+                {
+                    "name": "Banheiro"
+                },
+                {
+                    "name": "Colchão"
+                },
+                {
+                    "name": "Cozinha"
+                },
+                {
+                    "name": "Decoração"
+                },
+                {
+                    "name": "Enfeites de Natal"
+                },
+                {
+                    "name": "Escritório"
+                },
+                {
+                    "name": "Infantil"
+                },
+                {
+                    "name": "Lavanderia"
+                },
+                {
+                    "name": "Quarto"
+                },
+                {
+                    "name": "Sala de Estar"
+                },
+                {
+                    "name": "Sala de Jantar"
+                }
+            ]
         },
         {
             "name": "Papelaria",
             "link": "papelaria",
-            "icon": "app/resources/images/notebook.png"
+            "icon": "app/resources/images/notebook.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Leitura"
+                },
+                {
+                    "name": "Adesivos"
+                },
+                {
+                    "name": "Agendas e Calendários"
+                },
+                {
+                    "name": "Álbuns"
+                },
+                {
+                    "name": "Artes"
+                },
+                {
+                    "name": "Artigos para Festas"
+                },
+                {
+                    "name": "Embalagens"
+                },
+                {
+                    "name": "Escrita e Corretivos"
+                },
+                {
+                    "name": "Escritório"
+                },
+                {
+                    "name": "Materiais Escolares"
+                },
+                {
+                    "name": "Mídia"
+                },
+                {
+                    "name": "Papéis e Pastas"
+                }
+            ]
         },
         {
             "name": "Perfumaria e Cosméticos",
             "link": "perfumaria-e-cosmeticos",
-            "icon": "app/resources/images/perfume.png"
+            "icon": "app/resources/images/perfume.png",
+            "subcategory": [
+                {
+                    "name": "Beleza e Saúde"
+                },
+                {
+                    "name": "Cuidados da Pele"
+                },
+                {
+                    "name": "Cuidados da Unha"
+                },
+                {
+                    "name": "Cuidados do Cabelo"
+                },
+                {
+                    "name": "Maquiagem"
+                },
+                {
+                    "name": "Perfumes"
+                }
+            ]
         },
         {
             "name": "Pet shop",
             "link": "pet-shop",
-            "icon": "app/resources/images/dog.png"
+            "icon": "app/resources/images/dog.png",
+            "subcategory": [
+                {
+                    "name": "Cães"
+                },
+                {
+                    "name": "Clínica Veterinária"
+                },
+                {
+                    "name": "Gatos"
+                },
+                {
+                    "name": "Outros animais"
+                },
+                {
+                    "name": "Pássaros"
+                },
+                {
+                    "name": "Peixes"
+                },
+                {
+                    "name": "Répteis"
+                },
+                {
+                    "name": "Roedores"
+                },
+                {
+                    "name": "Serviços"
+                }
+            ]
         },
         {
             "name": "Produtos para Limpeza",
             "link": "produtos-para-limpeza",
-            "icon": "app/resources/images/cleaningProducts.png"
+            "icon": "app/resources/images/cleaningProducts.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios de Limpeza"
+                },
+                {
+                    "name": "Cuidados com Roupas"
+                },
+                {
+                    "name": "Descartáveis"
+                },
+                {
+                    "name": "Higiene Pessoal"
+                },
+                {
+                    "name": "Limpeza da Casa"
+                },
+                {
+                    "name": "Limpeza da Cozinha"
+                },
+                {
+                    "name": "Limpeza de Sapatos"
+                },
+                {
+                    "name": "Limpeza do Banheiro"
+                }
+            ]
         },
         {
             "name": "Produtos sustentáveis",
             "link": "produtos-sustentaveis",
-            "icon": "app/resources/images/sustainable.png"
+            "icon": "app/resources/images/sustainable.png",
+            "subcategory": [
+                {
+                    "name": "Conscientização"
+                },
+                {
+                    "name": "Cosméticos Orgânicos e Naturais"
+                },
+                {
+                    "name": "Energia"
+                },
+                {
+                    "name": "E-Solidário"
+                },
+                {
+                    "name": "Matéria-prima"
+                },
+                {
+                    "name": "Pilhas recarregáveis"
+                },
+                {
+                    "name": "Transporte alternativo"
+                }
+            ]
         },
         {
             "name": "Relógios e Joias",
             "link": "relogios-e-joias",
-            "icon": "app/resources/images/watch.png"
+            "icon": "app/resources/images/watch.png",
+            "subcategory": [
+                {
+                    "name": "Joias"
+                },
+                {
+                    "name": "Relógios"
+                }
+            ]
         },
         {
             "name": "Serviços",
             "link": "servicos",
-            "icon": "app/resources/images/service.png"
+            "icon": "app/resources/images/service.png",
+            "subcategory": [
+                {
+                    "name": "Aplicação e Remoção"
+                },
+                {
+                    "name": "Assinatura de revistas"
+                },
+                {
+                    "name": "Assistência"
+                },
+                {
+                    "name": "Automotivo"
+                },
+                {
+                    "name": "Carreto e Descarte"
+                },
+                {
+                    "name": "Cultura e Entretenimento"
+                },
+                {
+                    "name": "Cursos On line"
+                },
+                {
+                    "name": "Fidelidade"
+                },
+                {
+                    "name": "Fixação"
+                },
+                {
+                    "name": "Games"
+                },
+                {
+                    "name": "Instalação"
+                },
+                {
+                    "name": "Lavanderia"
+                },
+                {
+                    "name": "Limpeza"
+                },
+                {
+                    "name": "Manutenção e Limpeza"
+                },
+                {
+                    "name": "Montagem"
+                },
+                {
+                    "name": "Pet"
+                },
+                {
+                    "name": "Seguro e proteção"
+                },
+                {
+                    "name": "Tecnologia e Informática"
+                }
+            ]
         },
         {
             "name": "Tablets",
             "link": "tablets",
-            "icon": "app/resources/images/tablet.png"
+            "icon": "app/resources/images/tablet.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios de Tablets"
+                },
+                {
+                    "name": "iPads e Tablets"
+                }
+            ]
         },
         {
             "name": "Telefonia",
             "link": "telefonia",
-            "icon": "app/resources/images/iphone.png"
+            "icon": "app/resources/images/iphone.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Celular e Smartphone"
+                },
+                {
+                    "name": "Acessórios para Telefones Fixos"
+                },
+                {
+                    "name": "Celulares e Smartphones"
+                },
+                {
+                    "name": "Chip"
+                },
+                {
+                    "name": "Fax Mini centrais PABX e Suprimentos"
+                },
+                {
+                    "name": "Proteção de Celulares"
+                },
+                {
+                    "name": "Rádio de Comunicação"
+                },
+                {
+                    "name": "Smartwatch"
+                },
+                {
+                    "name": "Tablets"
+                },
+                {
+                    "name": "Telefones fixos"
+                }
+            ]
         },
         {
             "name": "Utilidades domésticas",
             "link": "utilidades-domesticas",
-            "icon": "app/resources/images/pan.png"
+            "icon": "app/resources/images/pan.png",
+            "subcategory": [
+                {
+                    "name": "Acessórios para Banheiro"
+                },
+                {
+                    "name": "Acessórios para Cozinha"
+                },
+                {
+                    "name": "Acessórios para Lavanderia"
+                },
+                {
+                    "name": "Acessórios para Mesa"
+                },
+                {
+                    "name": "Acessórios para Servir"
+                },
+                {
+                    "name": "Aparelhos de Fondue"
+                },
+                {
+                    "name": "Aparelhos de Jantar"
+                },
+                {
+                    "name": "Assadeiras e Fôrmas"
+                },
+                {
+                    "name": "Balanças de Cozinha"
+                },
+                {
+                    "name": "Chá e Café"
+                },
+                {
+                    "name": "Chopeiras"
+                },
+                {
+                    "name": "Conjuntos de Taças"
+                },
+                {
+                    "name": "Coolers"
+                },
+                {
+                    "name": "Decore e Organize"
+                },
+                {
+                    "name": "Enfeites Natalinos"
+                },
+                {
+                    "name": "Faqueiros e Talheres"
+                },
+                {
+                    "name": "Lavanderia - tanques"
+                },
+                {
+                    "name": "Linha Bar"
+                },
+                {
+                    "name": "Linha de Copos e Sucos"
+                },
+                {
+                    "name": "Linha para Churrasco"
+                },
+                {
+                    "name": "Linha para Petiscos"
+                },
+                {
+                    "name": "Linha para Sobremesa"
+                },
+                {
+                    "name": "Panelas"
+                },
+                {
+                    "name": "Produtos Sustentáveis"
+                }
+            ]
         }
     ]
 }
