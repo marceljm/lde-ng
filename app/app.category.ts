@@ -11,7 +11,7 @@ export class AppCategory implements OnInit {
 
     categories: Category[];
     categoryMap: Map<string, Category[]> = new Map<string, Category[]>();
-    nameLinkMap: Map<string, string> = new Map<string, string>();
+    linkName: Map<string, string> = new Map<string, string>();
 
     constructor(private categoryService: CategoryService, private router: Router) { }
 
@@ -21,13 +21,17 @@ export class AppCategory implements OnInit {
         ).then(
             () => {
                 for (let entry of this.categories) {
-                    this.nameLinkMap.set(this.toLink(entry.name), entry.name);
+                    this.linkName.set(this.toLink(entry.name), entry.name);
 
                     if (entry.subcategory) {
                         this.categoryMap.set(this.toLink(entry.name), entry.subcategory);
 
                         for (let entry2 of entry.subcategory) {
-                            this.categoryMap.set(this.toLink(entry.name + '/' + entry2.name), entry2.subcategory)
+                            this.linkName.set(this.toLink(entry.name + '/' + entry2.name), entry2.name);
+
+                            if (entry2.subcategory) {
+                                this.categoryMap.set(this.toLink(entry.name + '/' + entry2.name), entry2.subcategory);
+                            }
                         }
                     }
                 }
@@ -47,7 +51,7 @@ export class AppCategory implements OnInit {
     }
 
     getName() {
-        return this.nameLinkMap.get(this.getLink());
+        return this.linkName.get(this.getLink());
     }
 
     toLink(name: string) {
