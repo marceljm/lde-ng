@@ -21,10 +21,10 @@ export class AppCategory implements OnInit {
         ).then(
             () => {
                 for (let entry of this.categories) {
-                    this.nameLinkMap.set(entry.link, entry.name);
+                    this.nameLinkMap.set(this.toLink(entry.name), entry.name);
 
                     if (entry.subcategory) {
-                        this.categoryMap.set(entry.link, entry.subcategory);
+                        this.categoryMap.set(this.toLink(entry.name), entry.subcategory);
                     }
                 }
             });
@@ -44,5 +44,9 @@ export class AppCategory implements OnInit {
 
     getName() {
         return this.nameLinkMap.get(this.getLink());
+    }
+
+    toLink(name: string) {
+        return name.toLowerCase().replace(/[áãâà]/g, 'a').replace(/[éê&]/g, 'e').replace(/[í]/g, 'i').replace(/[óõô]/g, 'o').replace(/[úü]/g, 'u').replace(/ç/g, 'c').replace(/[ ]/g, '-');
     }
 }

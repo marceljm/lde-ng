@@ -3,7 +3,7 @@
     <template let-subcategory pTemplate="item">
         <div class="ui-g-12 ui-md-4">
             <p-panel [header]="">
-                <div (click)="navigate(getLink()+'/'+subcategory.link)" style="text-align: center; cursor:pointer">
+                <div (click)="navigate(getLink()+'/'+toLink(subcategory.name))" style="text-align: center; cursor:pointer">
                     {{subcategory.name}}
                 </div>
             </p-panel>
@@ -17,7 +17,7 @@
         <div class="ui-g-12 ui-md-2">
             <p-panel [header]="category.name">
                 <div style="text-align: center">
-                    <img [src]="category.icon" (click)="navigate(category.link)">
+                    <img [src]="category.icon" (click)="navigate(toLink(category.name))">
                 </div>
             </p-panel>
         </div>
