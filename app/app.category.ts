@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppCategory implements OnInit {
 
     categories: Category[];
-    categoryMap: Map<string, string[]> = new Map<string, string[]>();
+    categoryMap: Map<string, Category[]> = new Map<string, Category[]>();
     nameLinkMap: Map<string, string> = new Map<string, string>();
 
     constructor(private categoryService: CategoryService, private router: Router) { }
@@ -23,12 +23,8 @@ export class AppCategory implements OnInit {
                 for (let entry of this.categories) {
                     this.nameLinkMap.set(entry.link, entry.name);
 
-                    let subcategoryList: Array<string> = new Array<string>();
                     if (entry.subcategory) {
-                        for (let entry2 of entry.subcategory) {
-                            subcategoryList.push(entry2.name);
-                        }
-                        this.categoryMap.set(entry.link, subcategoryList);
+                        this.categoryMap.set(entry.link, entry.subcategory);
                     }
                 }
             });

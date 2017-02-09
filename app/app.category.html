@@ -3,8 +3,8 @@
     <template let-subcategory pTemplate="item">
         <div class="ui-g-12 ui-md-4">
             <p-panel [header]="">
-                <div style="text-align: center">
-                    {{subcategory}}
+                <div (click)="navigate(getLink()+'/'+subcategory.link)" style="text-align: center; cursor:pointer">
+                    {{subcategory.name}}
                 </div>
             </p-panel>
         </div>
