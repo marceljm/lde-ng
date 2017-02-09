@@ -31,7 +31,7 @@ const routes: Routes = [
                 children: [
                     {
                         path: ':name',
-                        component: AppHeader
+                        component: AppCategory
                     }
                 ],
             }

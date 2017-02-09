@@ -5,7 +5,15 @@
             "icon": "app/resources/images/headphones.png",
             "subcategory": [
                 {
-                    "name": "Acessório Áudio Portátil Fones Ouvido"
+                    "name": "Acessório Áudio Portátil Fones Ouvido",
+                    "subcategory": [
+                        {
+                            "name": "Acessórios para MP3 Players"
+                        },
+                        {
+                            "name": "Cabos e Conectores"
+                        }
+                    ]
                 },
                 {
                     "name": "Acessório Celulares Smartphones"
