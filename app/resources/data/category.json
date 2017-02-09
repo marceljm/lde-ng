@@ -4526,10 +4526,10 @@
                             "name": "Futebol de Botão"
                         },
                         {
-                            "name": "Pebolim"
+                            "name": "Pebolim/Totó"
                         },
                         {
-                            "name": "Ping-Pong"
+                            "name": "Ping-Pong/Tênis de Mesa"
                         },
                         {
                             "name": "Poker e Baralho"
@@ -4830,7 +4830,7 @@
                             "name": "Acessórios"
                         },
                         {
-                            "name": "Bolas"
+                            "name": "Bolas/Petecas"
                         },
                         {
                             "name": "Raqueteiras"
@@ -7475,9 +7475,6 @@
             "icon": "app/resources/images/sustainable.png",
             "subcategory": [
                 {
-                    "name": "Conscientização"
-                },
-                {
                     "name": "Cosméticos Orgânicos e Naturais",
                     "subcategory": [
                         {
@@ -8211,7 +8208,7 @@
                             "name": "Porta Utensílios"
                         },
                         {
-                            "name": "Pote"
+                            "name": "Pote/Kit Pote"
                         },
                         {
                             "name": "Potes e Tigelas"
