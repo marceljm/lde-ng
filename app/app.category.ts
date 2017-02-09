@@ -21,16 +21,18 @@ export class AppCategory implements OnInit {
         ).then(
             () => {
                 for (let entry of this.categories) {
+                    let link = this.toLink(entry.name);
                     this.linkName.set(this.toLink(entry.name), entry.name);
 
                     if (entry.subcategory) {
-                        this.categoryMap.set(this.toLink(entry.name), entry.subcategory);
+                        this.categoryMap.set(link, entry.subcategory);
 
                         for (let entry2 of entry.subcategory) {
-                            this.linkName.set(this.toLink(entry.name + '/' + entry2.name), entry2.name);
+                            let link2 = this.toLink(entry2.name);
+                            this.linkName.set(link + '/' + link2, entry2.name);
 
                             if (entry2.subcategory) {
-                                this.categoryMap.set(this.toLink(entry.name + '/' + entry2.name), entry2.subcategory);
+                                this.categoryMap.set(link + '/' + link2, entry2.subcategory);
                             }
                         }
                     }
@@ -55,7 +57,8 @@ export class AppCategory implements OnInit {
     }
 
     toLink(name: string) {
-        return name.toLowerCase().replace(/[áãâà]/g, 'a').replace(/[éê&]/g, 'e').replace(/[í]/g, 'i').replace(/[óõô]/g, 'o').replace(/[úü]/g, 'u').replace(/ç/g, 'c').replace(/[ ]/g, '-');
+        console.log(name);
+        return name.toLowerCase().replace(/[áãâà]/g, 'a').replace(/[éê&]/g, 'e').replace(/[í]/g, 'i').replace(/[óõô]/g, 'o').replace(/[úü]/g, 'u').replace(/ç/g, 'c').replace(/[ ]/g, '-').replace(/\//g, '-');
     }
 
     getLevel() {

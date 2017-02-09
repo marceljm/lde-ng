@@ -37,6 +37,25 @@ const routes: Routes = [
             }
         ],
     },
+    {
+        path: '',
+        children: [
+            {
+                path: ':name',
+                children: [
+                    {
+                        path: ':name',
+                        children: [
+                            {
+                                path: ':name',
+                                component: AppCategory
+                            }
+                        ],
+                    }
+                ],
+            }
+        ],
+    },
 ];
 
 @NgModule({

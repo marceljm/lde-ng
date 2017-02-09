@@ -1,4 +1,4 @@
-<p-dataGrid [value]="getSubcategories()" *ngIf="getLevel() == 2">
+<p-dataGrid [value]="getSubcategories()" *ngIf="getLevel() >= 3">
     <p-header>{{getName()}}</p-header>
     <template let-subcategory pTemplate="item">
         <div class="ui-g-12 ui-md-4">
@@ -11,7 +11,7 @@
     </template>
 </p-dataGrid>
 
-<p-dataGrid [value]="getSubcategories()" *ngIf="getLevel() == 1">
+<p-dataGrid [value]="getSubcategories()" *ngIf="getLevel() == 1 || getLevel() == 2">
     <p-header>{{getName()}}</p-header>
     <template let-subcategory pTemplate="item">
         <div class="ui-g-12 ui-md-4">
