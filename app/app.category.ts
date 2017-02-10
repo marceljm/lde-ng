@@ -33,6 +33,15 @@ export class AppCategory implements OnInit {
 
                             if (entry2.subcategory) {
                                 this.categoryMap.set(link + '/' + link2, entry2.subcategory);
+
+                                for (let entry3 of entry2.subcategory) {
+                                    let link3 = this.toLink(entry3.name);
+                                    this.linkName.set(link + '/' + link2 + '/' + link3, entry3.name);
+
+                                    if (entry3.subcategory) {
+                                        this.categoryMap.set(link + '/' + link2 + '/' + link3, entry3.subcategory);
+                                    }
+                                }
                             }
                         }
                     }
@@ -57,7 +66,6 @@ export class AppCategory implements OnInit {
     }
 
     toLink(name: string) {
-        console.log(name);
         return name.toLowerCase().replace(/[áãâà]/g, 'a').replace(/[éê&]/g, 'e').replace(/[í]/g, 'i').replace(/[óõô]/g, 'o').replace(/[úü]/g, 'u').replace(/ç/g, 'c').replace(/[ ]/g, '-').replace(/\//g, '-');
     }
 
@@ -68,5 +76,7 @@ export class AppCategory implements OnInit {
             return 1;
         if (this.getLink().match('^[^/]+/[^/]+$'))
             return 2;
+        if (this.getLink().match('^[^/]+/[^/]+/[^/]+$'))
+            return 3;            
     }
 }
