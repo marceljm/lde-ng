@@ -1,0 +1,9 @@
+{
+    "port": 4000,
+    "ghostMode": false,
+    "ui": false,
+    "open": false,
+    "server": {
+        "baseDir": "aot"
+    }
+}

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <base href="/">
+
+  <title>Loja de Eletrônicos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="src/app/resources/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/themes/omega/theme.css" />
+  <link rel="stylesheet" type="text/css" href="src/app/resources/icons/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="node_modules/primeng/resources/primeng.min.css" />
+  <link rel="stylesheet" type="text/css" href="src/app/resources/css/font.css" />
+
+  <!-- 1. Load libraries -->
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script>
+    window.module = 'aot';
+  </script>
+</head>
+
+<!-- 3. Display the application -->
+
+<body id="body" style="margin:0; padding:0;">
+  <header-app>
+  </header-app>
+  <my-app></my-app>
+</body>
+
+<script src="dist/build.js"></script>
+
+</html>

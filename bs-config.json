@@ -1,6 +1,13 @@
 {
-    "port": 4000,
-    "ghostMode": false,
-    "ui": false,
-    "open": false
+  "port": 4000,
+  "ghostMode": false,
+  "ui": false,
+  "open": false,
+  "server": {
+    "baseDir": [
+      "./src/app",
+      "./src/",
+      "./"
+    ]
+  }
 }
