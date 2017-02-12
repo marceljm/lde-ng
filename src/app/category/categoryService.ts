@@ -8,7 +8,7 @@ export class CategoryService {
     constructor(private http: Http) { }
 
     getCategory() {
-        return this.http.get('src/app/resources/data/category.json')
+        return this.http.get('../../resources/data/category.json')
             .toPromise()
             .then(res => <Category[]>res.json().data)
             .then(data => { return data; });

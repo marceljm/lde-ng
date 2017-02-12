@@ -14,7 +14,7 @@ var CategoryService = (function () {
         this.http = http;
     }
     CategoryService.prototype.getCategory = function () {
-        return this.http.get('src/app/resources/data/category.json')
+        return this.http.get('../../resources/data/category.json')
             .toPromise()
             .then(function (res) { return res.json().data; })
             .then(function (data) { return data; });

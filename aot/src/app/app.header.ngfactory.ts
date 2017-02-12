@@ -103,7 +103,7 @@ export class View_AppHeader0 extends import1.AppView<import0.AppHeader> {
     this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'style','width: 100px'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n            ',(null as any));
-    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'img',new import3.InlineArray4(4,'src','src/app/resources/images/logo.png','style','padding-top: 3px; padding-left: 10px; padding-bottom: 0px; width: 64px;'),(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'img',new import3.InlineArray4(4,'src','../resources/images/logo.png','style','padding-top: 3px; padding-left: 10px; padding-bottom: 0px; width: 64px;'),(null as any));
     this._text_7 = this.renderer.createText(this._el_4,'\n        ',(null as any));
     this._text_8 = this.renderer.createText(this._el_2,'\n        ',(null as any));
     this._el_9 = import3.createRenderElement(this.renderer,this._el_2,'div',import3.EMPTY_INLINE_ARRAY,(null as any));

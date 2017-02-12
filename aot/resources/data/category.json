@@ -2,7 +2,7 @@
     "data": [
         {
             "name": "Acessórios de Tecnologia",
-            "icon": "src/app/resources/images/headphones.png",
+            "icon": "resources/images/headphones.png",
             "subcategory": [
                 {
                     "name": "Acessório Áudio Portátil Fones Ouvido",
@@ -404,7 +404,7 @@
         },
         {
             "name": "Alimentos e Bebidas",
-            "icon": "src/app/resources/images/beverage.png",
+            "icon": "resources/images/beverage.png",
             "subcategory": [
                 {
                     "name": "Bebidas Não Alcoólicas",
@@ -582,7 +582,7 @@
         },
         {
             "name": "Automotivo",
-            "icon": "src/app/resources/images/car.png",
+            "icon": "resources/images/car.png",
             "subcategory": [
                 {
                     "name": "Acabamento",
@@ -1158,7 +1158,7 @@
         },
         {
             "name": "Bebês e Crianças",
-            "icon": "src/app/resources/images/babyCarriage.png",
+            "icon": "resources/images/babyCarriage.png",
             "subcategory": [
                 {
                     "name": "Alimentação",
@@ -1518,7 +1518,7 @@
         },
         {
             "name": "Beleza",
-            "icon": "src/app/resources/images/hairdryer.png",
+            "icon": "resources/images/hairdryer.png",
             "subcategory": [
                 {
                     "name": "Barbearia",
@@ -1674,7 +1674,7 @@
         },
         {
             "name": "Brinquedos",
-            "icon": "src/app/resources/images/toy.png",
+            "icon": "resources/images/toy.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Piscina e Praia"
@@ -2328,7 +2328,7 @@
         },
         {
             "name": "Cama Mesa e Banho",
-            "icon": "src/app/resources/images/table.png",
+            "icon": "resources/images/table.png",
             "subcategory": [
                 {
                     "name": "Banho",
@@ -2411,7 +2411,7 @@
         },
         {
             "name": "Câmeras e Filmadoras",
-            "icon": "src/app/resources/images/camera.png",
+            "icon": "resources/images/camera.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Câmeras e Filmadoras"
@@ -2467,7 +2467,7 @@
         },
         {
             "name": "Casa e Segurança",
-            "icon": "src/app/resources/images/house.png",
+            "icon": "resources/images/house.png",
             "subcategory": [
                 {
                     "name": "Acessibilidade",
@@ -3238,7 +3238,7 @@
         },
         {
             "name": "CDs DVDs e Blu-Rays",
-            "icon": "src/app/resources/images/blu-ray.png",
+            "icon": "resources/images/blu-ray.png",
             "subcategory": [
                 {
                     "name": "Colecionáveis",
@@ -3421,7 +3421,7 @@
         },
         {
             "name": "Cuidados com a Saúde",
-            "icon": "src/app/resources/images/readingGlasses.png",
+            "icon": "resources/images/readingGlasses.png",
             "subcategory": [
                 {
                     "name": "Aparelhos e Testes",
@@ -3798,7 +3798,7 @@
         },
         {
             "name": "Eletrodomésticos",
-            "icon": "src/app/resources/images/houseAppliances.png",
+            "icon": "resources/images/houseAppliances.png",
             "subcategory": [
                 {
                     "name": "Adegas para Vinho"
@@ -4004,7 +4004,7 @@
         },
         {
             "name": "Eletrônicos",
-            "icon": "src/app/resources/images/tv.png",
+            "icon": "resources/images/tv.png",
             "subcategory": [
                 {
                     "name": "Áudio",
@@ -4097,7 +4097,7 @@
         },
         {
             "name": "Eletroportáteis",
-            "icon": "src/app/resources/images/coffeeMaker.png",
+            "icon": "resources/images/coffeeMaker.png",
             "subcategory": [
                 {
                     "name": "Aquecedores de Ambiente",
@@ -4278,7 +4278,7 @@
         },
         {
             "name": "Esporte e Lazer",
-            "icon": "src/app/resources/images/ball.png",
+            "icon": "resources/images/ball.png",
             "subcategory": [
                 {
                     "name": "Acessórios Esportivos",
@@ -4847,7 +4847,7 @@
         },
         {
             "name": "Ferramentas e Jardim",
-            "icon": "src/app/resources/images/toolBox.png",
+            "icon": "resources/images/toolBox.png",
             "subcategory": [
                 {
                     "name": "Bombas dÁgua"
@@ -5276,7 +5276,7 @@
         },
         {
             "name": "Games",
-            "icon": "src/app/resources/images/joystick.png",
+            "icon": "resources/images/joystick.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Games"
@@ -5474,7 +5474,7 @@
         },
         {
             "name": "Informática",
-            "icon": "src/app/resources/images/pc.png",
+            "icon": "resources/images/pc.png",
             "subcategory": [
                 {
                     "name": "Computadores e All in One",
@@ -5579,7 +5579,7 @@
         },
         {
             "name": "Instrumentos Musicais",
-            "icon": "src/app/resources/images/guitar.png",
+            "icon": "resources/images/guitar.png",
             "subcategory": [
                 {
                     "name": "Acessórios de Áudio",
@@ -5912,7 +5912,7 @@
         },
         {
             "name": "Moda",
-            "icon": "src/app/resources/images/t-shirt.png",
+            "icon": "resources/images/t-shirt.png",
             "subcategory": [
                 {
                     "name": "Acessórios",
@@ -6289,7 +6289,7 @@
         },
         {
             "name": "Móveis e Decoração",
-            "icon": "src/app/resources/images/chair.png",
+            "icon": "resources/images/chair.png",
             "subcategory": [
                 {
                     "name": "Acessórios",
@@ -6723,7 +6723,7 @@
         },
         {
             "name": "Papelaria",
-            "icon": "src/app/resources/images/notebook.png",
+            "icon": "resources/images/notebook.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Leitura",
@@ -6969,7 +6969,7 @@
         },
         {
             "name": "Perfumaria e Cosméticos",
-            "icon": "src/app/resources/images/perfume.png",
+            "icon": "resources/images/perfume.png",
             "subcategory": [
                 {
                     "name": "Beleza e Saúde"
@@ -7087,7 +7087,7 @@
         },
         {
             "name": "Pet shop",
-            "icon": "src/app/resources/images/dog.png",
+            "icon": "resources/images/dog.png",
             "subcategory": [
                 {
                     "name": "Cães",
@@ -7282,7 +7282,7 @@
         },
         {
             "name": "Produtos para Limpeza",
-            "icon": "src/app/resources/images/cleaningProducts.png",
+            "icon": "resources/images/cleaningProducts.png",
             "subcategory": [
                 {
                     "name": "Acessórios de Limpeza",
@@ -7472,7 +7472,7 @@
         },
         {
             "name": "Produtos sustentáveis",
-            "icon": "src/app/resources/images/sustainable.png",
+            "icon": "resources/images/sustainable.png",
             "subcategory": [
                 {
                     "name": "Cosméticos Orgânicos e Naturais",
@@ -7559,7 +7559,7 @@
         },
         {
             "name": "Relógios e Joias",
-            "icon": "src/app/resources/images/watch.png",
+            "icon": "resources/images/watch.png",
             "subcategory": [
                 {
                     "name": "Joias",
@@ -7617,7 +7617,7 @@
         },
         {
             "name": "Serviços",
-            "icon": "src/app/resources/images/service.png",
+            "icon": "resources/images/service.png",
             "subcategory": [
                 {
                     "name": "Aplicação e Remoção"
@@ -7901,7 +7901,7 @@
         },
         {
             "name": "Tablets",
-            "icon": "src/app/resources/images/tablet.png",
+            "icon": "resources/images/tablet.png",
             "subcategory": [
                 {
                     "name": "Acessórios de Tablets"
@@ -7924,7 +7924,7 @@
         },
         {
             "name": "Telefonia",
-            "icon": "src/app/resources/images/iphone.png",
+            "icon": "resources/images/iphone.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Celular e Smartphone"
@@ -7984,7 +7984,7 @@
         },
         {
             "name": "Utilidades domésticas",
-            "icon": "src/app/resources/images/pan.png",
+            "icon": "resources/images/pan.png",
             "subcategory": [
                 {
                     "name": "Acessórios para Banheiro",
