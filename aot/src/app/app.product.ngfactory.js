@@ -4,26 +4,27 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
+"use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-import * as import0 from '../../../src/app/app.product';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import4 from '@angular/core/src/metadata/view';
-import * as import5 from '../../../src/app/product/productService';
-import * as import6 from '@angular/core/src/linker/view_type';
-import * as import7 from '@angular/core/src/change_detection/constants';
-import * as import8 from '@angular/core/src/linker/component_factory';
-import * as import9 from '@angular/http/src/http';
-import * as import10 from '@angular/core/src/linker/view_container';
-import * as import11 from '../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import12 from '@angular/core/src/linker/template_ref';
-import * as import13 from '@angular/common/src/directives/ng_if';
-import * as import14 from '@angular/core/src/change_detection/change_detection_util';
-import * as import15 from '@angular/core/src/security';
+var import0 = require("../../../src/app/app.product");
+var import1 = require("@angular/core/src/linker/view");
+var import3 = require("@angular/core/src/linker/view_utils");
+var import4 = require("@angular/core/src/metadata/view");
+var import5 = require("../../../src/app/product/productService");
+var import6 = require("@angular/core/src/linker/view_type");
+var import7 = require("@angular/core/src/change_detection/constants");
+var import8 = require("@angular/core/src/linker/component_factory");
+var import9 = require("@angular/http/src/http");
+var import10 = require("@angular/core/src/linker/view_container");
+var import11 = require("../../node_modules/@angular/common/src/directives/ng_if.ngfactory");
+var import12 = require("@angular/core/src/linker/template_ref");
+var import13 = require("@angular/common/src/directives/ng_if");
+var import14 = require("@angular/core/src/change_detection/change_detection_util");
+var import15 = require("@angular/core/src/security");
 var Wrapper_AppProduct = (function () {
     function Wrapper_AppProduct(p0) {
         this._changed = false;
@@ -54,7 +55,7 @@ var Wrapper_AppProduct = (function () {
     };
     return Wrapper_AppProduct;
 }());
-export { Wrapper_AppProduct };
+exports.Wrapper_AppProduct = Wrapper_AppProduct;
 var renderType_AppProduct_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
 var View_AppProduct_Host0 = (function (_super) {
     __extends(View_AppProduct_Host0, _super);
@@ -91,7 +92,7 @@ var View_AppProduct_Host0 = (function (_super) {
     };
     return View_AppProduct_Host0;
 }(import1.AppView));
-export var AppProductNgFactory = new import8.ComponentFactory('product-app', View_AppProduct_Host0, import0.AppProduct);
+exports.AppProductNgFactory = new import8.ComponentFactory('product-app', View_AppProduct_Host0, import0.AppProduct);
 var styles_AppProduct = [];
 var renderType_AppProduct = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_AppProduct, {});
 var View_AppProduct0 = (function (_super) {
@@ -134,7 +135,7 @@ var View_AppProduct0 = (function (_super) {
     };
     return View_AppProduct0;
 }(import1.AppView));
-export { View_AppProduct0 };
+exports.View_AppProduct0 = View_AppProduct0;
 var View_AppProduct1 = (function (_super) {
     __extends(View_AppProduct1, _super);
     function View_AppProduct1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {

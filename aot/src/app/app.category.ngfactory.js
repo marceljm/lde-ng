@@ -4,35 +4,36 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
+"use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-import * as import0 from '../../../src/app/app.category';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import4 from '@angular/core/src/metadata/view';
-import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/constants';
-import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import8 from '../../../src/app/category/categoryService';
-import * as import9 from '@angular/router/src/router';
-import * as import10 from '@angular/core/src/linker/view_container';
-import * as import11 from '../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import12 from '@angular/core/src/linker/template_ref';
-import * as import13 from '@angular/common/src/directives/ng_if';
-import * as import14 from 'primeng/components/datagrid/datagrid';
-import * as import15 from '../../node_modules/primeng/components/datagrid/datagrid.ngfactory';
-import * as import16 from '@angular/core/src/linker/query_list';
-import * as import17 from 'primeng/components/common/shared';
-import * as import18 from '../../node_modules/primeng/components/common/shared.ngfactory';
-import * as import19 from '@angular/core/src/change_detection/change_detection_util';
-import * as import20 from '@angular/core/src/linker/element_ref';
-import * as import21 from '@angular/core/src/change_detection/differs/iterable_differs';
-import * as import22 from 'primeng/components/panel/panel';
-import * as import23 from '../../node_modules/primeng/components/panel/panel.ngfactory';
-import * as import24 from '@angular/core/src/security';
+var import0 = require("../../../src/app/app.category");
+var import1 = require("@angular/core/src/linker/view");
+var import3 = require("@angular/core/src/linker/view_utils");
+var import4 = require("@angular/core/src/metadata/view");
+var import5 = require("@angular/core/src/linker/view_type");
+var import6 = require("@angular/core/src/change_detection/constants");
+var import7 = require("@angular/core/src/linker/component_factory");
+var import8 = require("../../../src/app/category/categoryService");
+var import9 = require("@angular/router/src/router");
+var import10 = require("@angular/core/src/linker/view_container");
+var import11 = require("../../node_modules/@angular/common/src/directives/ng_if.ngfactory");
+var import12 = require("@angular/core/src/linker/template_ref");
+var import13 = require("@angular/common/src/directives/ng_if");
+var import14 = require("primeng/components/datagrid/datagrid");
+var import15 = require("../../node_modules/primeng/components/datagrid/datagrid.ngfactory");
+var import16 = require("@angular/core/src/linker/query_list");
+var import17 = require("primeng/components/common/shared");
+var import18 = require("../../node_modules/primeng/components/common/shared.ngfactory");
+var import19 = require("@angular/core/src/change_detection/change_detection_util");
+var import20 = require("@angular/core/src/linker/element_ref");
+var import21 = require("@angular/core/src/change_detection/differs/iterable_differs");
+var import22 = require("primeng/components/panel/panel");
+var import23 = require("../../node_modules/primeng/components/panel/panel.ngfactory");
+var import24 = require("@angular/core/src/security");
 var Wrapper_AppCategory = (function () {
     function Wrapper_AppCategory(p0, p1) {
         this._changed = false;
@@ -63,7 +64,7 @@ var Wrapper_AppCategory = (function () {
     };
     return Wrapper_AppCategory;
 }());
-export { Wrapper_AppCategory };
+exports.Wrapper_AppCategory = Wrapper_AppCategory;
 var renderType_AppCategory_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
 var View_AppCategory_Host0 = (function (_super) {
     __extends(View_AppCategory_Host0, _super);
@@ -96,7 +97,7 @@ var View_AppCategory_Host0 = (function (_super) {
     };
     return View_AppCategory_Host0;
 }(import1.AppView));
-export var AppCategoryNgFactory = new import7.ComponentFactory('category-app', View_AppCategory_Host0, import0.AppCategory);
+exports.AppCategoryNgFactory = new import7.ComponentFactory('category-app', View_AppCategory_Host0, import0.AppCategory);
 var styles_AppCategory = [];
 var renderType_AppCategory = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_AppCategory, {});
 var View_AppCategory0 = (function (_super) {
@@ -162,7 +163,7 @@ var View_AppCategory0 = (function (_super) {
     };
     return View_AppCategory0;
 }(import1.AppView));
-export { View_AppCategory0 };
+exports.View_AppCategory0 = View_AppCategory0;
 var View_AppCategory1 = (function (_super) {
     __extends(View_AppCategory1, _super);
     function View_AppCategory1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {

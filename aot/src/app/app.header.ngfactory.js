@@ -4,18 +4,19 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
+"use strict";
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-import * as import0 from '../../../src/app/app.header';
-import * as import1 from '@angular/core/src/linker/view';
-import * as import3 from '@angular/core/src/linker/view_utils';
-import * as import4 from '@angular/core/src/metadata/view';
-import * as import5 from '@angular/core/src/linker/view_type';
-import * as import6 from '@angular/core/src/change_detection/constants';
-import * as import7 from '@angular/core/src/linker/component_factory';
+var import0 = require("../../../src/app/app.header");
+var import1 = require("@angular/core/src/linker/view");
+var import3 = require("@angular/core/src/linker/view_utils");
+var import4 = require("@angular/core/src/metadata/view");
+var import5 = require("@angular/core/src/linker/view_type");
+var import6 = require("@angular/core/src/change_detection/constants");
+var import7 = require("@angular/core/src/linker/component_factory");
 var Wrapper_AppHeader = (function () {
     function Wrapper_AppHeader() {
         this._changed = false;
@@ -41,7 +42,7 @@ var Wrapper_AppHeader = (function () {
     };
     return Wrapper_AppHeader;
 }());
-export { Wrapper_AppHeader };
+exports.Wrapper_AppHeader = Wrapper_AppHeader;
 var renderType_AppHeader_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
 var View_AppHeader_Host0 = (function (_super) {
     __extends(View_AppHeader_Host0, _super);
@@ -74,7 +75,7 @@ var View_AppHeader_Host0 = (function (_super) {
     };
     return View_AppHeader_Host0;
 }(import1.AppView));
-export var AppHeaderNgFactory = new import7.ComponentFactory('header-app', View_AppHeader_Host0, import0.AppHeader);
+exports.AppHeaderNgFactory = new import7.ComponentFactory('header-app', View_AppHeader_Host0, import0.AppHeader);
 var styles_AppHeader = [];
 var renderType_AppHeader = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_AppHeader, {});
 var View_AppHeader0 = (function (_super) {
@@ -124,5 +125,5 @@ var View_AppHeader0 = (function (_super) {
     };
     return View_AppHeader0;
 }(import1.AppView));
-export { View_AppHeader0 };
+exports.View_AppHeader0 = View_AppHeader0;
 //# sourceMappingURL=app.header.ngfactory.js.map
