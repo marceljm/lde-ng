@@ -2,32 +2,17 @@
 
 @font-face {
     font-family: 'RobotoLight';
-    src: url("src/app/resources/fonts/roboto-light-webfont.eot");
-    src: url("src/app/resources/fonts/roboto-light-webfont.eot#iefix") format('embedded-opentype'),
-         url("src/app/resources/fonts/roboto-light-webfont.woff2") format('woff2'),
-         url("src/app/resources/fonts/roboto-light-webfont.woff") format('woff'),
-         url("src/app/resources/fonts/roboto-light-webfont.ttf") format('truetype'),
-         url("src/app/resources/fonts/roboto-light-webfont.svg#RobotoLight") format('svg');
+    src: url("src/app/resources/fonts/roboto-light-webfont.woff2") format('woff2');
 }
 
 @font-face {
     font-family: 'RobotoRegular';
-    src: url("src/app/resources/fonts/roboto-regular-webfont.eot");
-    src: url("src/app/resources/fonts/roboto-regular-webfont.eot#iefix") format('embedded-opentype'),
-         url("src/app/resources/fonts/roboto-regular-webfont.woff2") format('woff2'),
-         url("src/app/resources/fonts/roboto-regular-webfont.woff") format('woff'),
-         url("src/app/resources/fonts/roboto-regular-webfont.ttf") format('truetype'),
-         url("src/app/resources/fonts/roboto-regular-webfont.svg#RobotoRegular") format('svg');
+    src: url("src/app/resources/fonts/roboto-regular-webfont.woff2") format('woff2');
 }
 
 @font-face {
     font-family: 'RobotoMedium';
-    src: url("src/app/resources/fonts/roboto-medium-webfont.eot");
-    src: url("src/app/resources/fonts/roboto-medium-webfont.eot#iefix") format('embedded-opentype'),
-         url("src/app/resources/fonts/roboto-medium-webfont.woff2") format('woff2'),
-         url("src/app/resources/fonts/roboto-medium-webfont.woff") format('woff'),
-         url("src/app/resources/fonts/roboto-medium-webfont.ttf") format('truetype'),
-         url("src/app/resources/fonts/roboto-medium-webfont.svg#RobotoMedium") format('svg');
+    src: url("src/app/resources/fonts/roboto-medium-webfont.woff2") format('woff2');
 }
 
 /*  ----------------------------------------------------------------------------------------------------- */

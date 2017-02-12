@@ -1,14 +1,4 @@
 @font-face {
-	font-family: TelefonicaCAP;
-	src: url('../fonts/TelefonicaCAP.otf') format('opentype');
-}
-
-@font-face {
 	font-family: TelefonicaHeadLine-Light;
 	src: url('../fonts/TelefonicaHeadline-Light.otf') format('opentype');
-}
-
-@font-face {
-	font-family: TelefonicaText;
-	src: url('../fonts/telefonicatext-webfont.ttf') format('truetype');
 }
