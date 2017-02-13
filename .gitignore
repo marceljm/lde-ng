@@ -2,7 +2,12 @@ node_modules
 src/app/**/*.js
 src/app/*.js
 src/main*.js
-
+aot/node_modules
+aot/dist
+aot/resources
+aot/src
+aot/*.css
+aot/*.js
 *.log
 *.map
 *.d.ts
