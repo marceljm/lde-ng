@@ -27,16 +27,18 @@
 
 <div *ngIf="getLevel() == 3">
     <div *ngIf="page">
-        <h2>page: {{page.page}}</h2>
-        <h2>items: {{page.items}}</h2>
-        <h2>total: {{page.total}}</h2>
-        <h2>query: {{page.query}}</h2>
-        <h2>product[0].description: {{page.productItems.productItem[0].description}}</h2>
-        <img src="{{page.productItems.productItem[0].image.medium}}">
-        <h2>product[0].manufacturer: {{page.productItems.productItem[0].manufacturer}}</h2>
-        <h2>product[0].merchantCategory: {{page.productItems.productItem[0].merchantCategory}}</h2>
-        <h2>product[0].name: {{page.productItems.productItem[0].name}}</h2>
-        <h2>product[0].price: {{page.productItems.productItem[0].price}}</h2>
-        <h2>{{page.productItems.productItem[0].trackingLinks.trackingLink[0].ppc}}</h2>
+        <div *ngIf="hasItems()">
+            <h2>page: {{page.page}}</h2>
+            <h2>items: {{page.items}}</h2>
+            <h2>total: {{page.total}}</h2>
+            <h2>query: {{page.query}}</h2>
+            <h2>product[0].description: {{page.productItems.productItem[0].description}}</h2>
+            <img src="{{page.productItems.productItem[0].image.medium}}">
+            <h2>product[0].manufacturer: {{page.productItems.productItem[0].manufacturer}}</h2>
+            <h2>product[0].merchantCategory: {{page.productItems.productItem[0].merchantCategory}}</h2>
+            <h2>product[0].name: {{page.productItems.productItem[0].name}}</h2>
+            <h2>product[0].price: {{page.productItems.productItem[0].price}}</h2>
+            <h2>{{page.productItems.productItem[0].trackingLinks.trackingLink[0].ppc}}</h2>
+        </div>
     </div>
 </div>

@@ -97,4 +97,8 @@ export class AppCategory implements OnInit {
         if (this.getLink().match('^[^/]+/[^/]+/[^/]+$'))
             return 3;
     }
+
+    hasItems() {
+        return this.page.items > 0;
+    }
 }
