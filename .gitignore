@@ -1,4 +1,10 @@
 node_modules
+src/app/**/*.js
+src/app/*.js
+aot/src/app/**/*.js
+aot/src/app/*.js
+src/main*.js
+aot/main*.js
 *.log
 *.map
 *.d.ts
