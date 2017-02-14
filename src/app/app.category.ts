@@ -102,4 +102,7 @@ export class AppCategory implements OnInit {
         return this.page.items > 0;
     }
 
+    getFormattedPrice(price: number) {
+        return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price);
+    }
 }
