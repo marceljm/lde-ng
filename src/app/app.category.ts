@@ -101,4 +101,5 @@ export class AppCategory implements OnInit {
     hasItems() {
         return this.page.items > 0;
     }
+
 }

@@ -28,17 +28,20 @@
 <div *ngIf="getLevel() == 3">
     <div *ngIf="page">
         <div *ngIf="hasItems()">
-            <h2>page: {{page.page}}</h2>
-            <h2>items: {{page.items}}</h2>
-            <h2>total: {{page.total}}</h2>
-            <h2>query: {{page.query}}</h2>
-            <h2>product[0].description: {{page.productItems.productItem[0].description}}</h2>
-            <img src="{{page.productItems.productItem[0].image.medium}}">
-            <h2>product[0].manufacturer: {{page.productItems.productItem[0].manufacturer}}</h2>
-            <h2>product[0].merchantCategory: {{page.productItems.productItem[0].merchantCategory}}</h2>
-            <h2>product[0].name: {{page.productItems.productItem[0].name}}</h2>
-            <h2>product[0].price: {{page.productItems.productItem[0].price}}</h2>
-            <h2>{{page.productItems.productItem[0].trackingLinks.trackingLink[0].ppc}}</h2>
+            <p-dataGrid [value]="page.productItems.productItem">
+                <template let-productItem pTemplate="item">
+                    <div class="ui-g-12 ui-md-3">
+                        <a [href]="productItem.trackingLinks.trackingLink[0].ppc" style="text-decoration: none;">
+                            <p-panel>
+                                <div style="font-size:13px; color: #2196f3; text-align:left">{{productItem.name}}</div>
+                                <div style="text-align: center"><img [src]="productItem.image.medium" style="height: 180px"></div>
+                                <div style="font-size:17px;color: #4caf50;text-align:right">{{productItem.price | currency:'BRL':true:'1.2-2'}}</div>
+                            </p-panel>
+                        </a>
+                    </div>
+                </template>
+                <p-footer>{{page.page}}</p-footer>
+            </p-dataGrid>
         </div>
     </div>
 </div>
