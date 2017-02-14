@@ -19,6 +19,7 @@ export class AppCategory implements OnInit {
     private errorMessage: string;
 
     page: Page;
+    arrayPage: Page[] = [];
 
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
@@ -53,16 +54,20 @@ export class AppCategory implements OnInit {
                         }
                     }
                 }
-                this.getPage();
+                this.getArrayPage(1);
             });
     }
 
-    getPage() {
-        this.productService.getPage(this.getName()).subscribe(
+    getArrayPage(i: number) {
+        this.productService.getPage(this.getName(), i).subscribe(
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
-                console.log(this.page);
+                console.log(i);
+                this.arrayPage[i - 1] = this.page;
+                if (this.page.items == 50) {
+                    this.getArrayPage(++i);
+                }
             }
         )
     }

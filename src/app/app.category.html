@@ -25,25 +25,49 @@
     <p-footer></p-footer>
 </p-dataGrid>
 
-<div *ngIf="getLevel() == 3">
+<!--div *ngIf="getLevel() == 3">
     <div *ngIf="page">
         <div *ngIf="hasItems()">
             <p-dataGrid [value]="page.productItems.productItem">
                 <template let-productItem pTemplate="item">
                     <div class="ui-g-12 ui-md-3">
-                        <a [href]="productItem.trackingLinks.trackingLink[0].ppc" style="text-decoration: none;">
-                            <p-panel>
-                                <p-header>
-                                    <div style="font-size:13px; color: #2196f3; text-align:left">{{productItem.name}}</div>
-                                </p-header>
-                                <div style="text-align: center"><img [src]="productItem.image.medium" style="height: 180px"></div><br>
-                                <div style="font-size:17px;color: #4caf50;text-align:right">{{getFormattedPrice(productItem.price)}}</div>
-                            </p-panel>
-                        </a>
-                    </div>
+                        <!--a [href]="productItem.trackingLinks.trackingLink[0].ppc" style="text-decoration: none;"-->
+<!--p-panel>
+                            <p-header>
+                                <div style="font-size:13px; color: #2196f3; text-align:left">{{productItem.name}}</div>
+                            </p-header>
+                            <div style="text-align: center"><img [src]="productItem.image.medium" style="height: 180px"></div><br>
+                            <div style="font-size:17px;color: #4caf50;text-align:right">{{getFormattedPrice(productItem.price)}}</div>
+                        </p-panel>
+                        <!--/a-->
+<!--/div>
                 </template>
                 <p-footer>{{page.page}}</p-footer>
             </p-dataGrid>
         </div>
     </div>
+</div-->
+
+<div *ngIf="getLevel() == 3">
+    <!--div *ngIf="page"-->
+    <!--div *ngIf="hasItems()"-->
+    <p-dataGrid [value]="arrayPage">
+        <template let-p pTemplate="item">
+            <p-dataGrid [value]="p.productItems.productItem">
+                <template let-productItem pTemplate="item">
+                    <div class="ui-g-12 ui-md-3">
+                        <p-panel>
+                            <p-header>
+                                <div style="font-size:13px; color: #2196f3; text-align:left">{{productItem.name}}</div>
+                            </p-header>
+                            <div style="text-align: center"><img [src]="productItem.image.medium" style="height: 180px"></div><br>
+                            <div style="font-size:17px;color: #4caf50;text-align:right">{{getFormattedPrice(productItem.price)}}</div>
+                        </p-panel>
+                    </div>
+                </template>
+            </p-dataGrid>
+        </template>
+    </p-dataGrid>
+    <!--/div-->
+    <!--/div-->
 </div>
