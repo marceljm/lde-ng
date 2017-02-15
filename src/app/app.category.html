@@ -60,11 +60,11 @@
         <i class="fa fa-search"></i>
         <input #gb type="text" pInputText size="30" placeholder="filtro global (texto exato)">
     </div>
-    <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [rowsPerPageOptions]="[50,100]" [globalFilter]="gb"
-        [responsive]="true" paginatorPosition="bottom" emptyMessage="Nenhum produto encontrado">
+    <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [globalFilter]="gb" [responsive]="true"
+        paginatorPosition="both" emptyMessage="Nenhum produto encontrado">
         <p-header>
         </p-header>
-        <p-column header="produto">
+        <p-column header="">
             <template let-col let-product="rowData" pTemplate="body">
                 <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px"></div>
             </template>
