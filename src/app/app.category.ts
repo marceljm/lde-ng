@@ -4,6 +4,7 @@ import { Category } from './category/category';
 import { ProductService } from './product/productService';
 import { Page } from './product/page';
 import { Product } from './product/product';
+import { Message } from 'primeng/primeng';
 
 import { Router } from '@angular/router';
 
@@ -23,6 +24,9 @@ export class AppCategory implements OnInit {
     page: Page;
     arrayPage: Page[] = [];
     arrayProduct: Product[] = [];
+
+    msgs: Message[] = [];
+    totalItems: number = 0;
 
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
@@ -72,6 +76,7 @@ export class AppCategory implements OnInit {
                     this.arrayProduct.push(entry);
                 }
                 this.arrayPage[i - 1] = this.page;
+                this.showInfo(this.page.items);
                 if (this.page.items == 50) {
                     this.getArrayPage(++i);
                 }
@@ -116,5 +121,11 @@ export class AppCategory implements OnInit {
 
     getFormattedPrice(price: number) {
         return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price);
+    }
+
+    showInfo(total: number) {
+        this.totalItems += total;
+        this.msgs = [];
+        this.msgs.push({ severity: 'info', summary: 'Localizando...', detail: this.totalItems + ' produtos encontrados' });
     }
 }

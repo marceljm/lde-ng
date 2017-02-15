@@ -18,7 +18,7 @@ export default {
     commonjs({
       include: ['node_modules/rxjs/**', 'node_modules/primeng/**'],
       namedExports: {
-        'node_modules/primeng/primeng.js': ['DataGridModule, PanelModule, ButtonModule, DataTableModule, SharedModule, InputTextModule']
+        'node_modules/primeng/primeng.js': ['DataGridModule, PanelModule, ButtonModule, DataTableModule, SharedModule, InputTextModule, GrowlModule']
       },
     }),
     uglify()
