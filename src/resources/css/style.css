@@ -1,0 +1,22 @@
+.ui-datatable .ui-datatable-header {
+    padding: 0;
+    border-bottom: 0 none;
+}
+
+.ui-datatable .ui-column-filter {
+    margin: 0;
+}
+
+.ui-widget-header {
+    border: 0;
+}
+
+.ui-datatable tbody > tr.ui-widget-content.ui-datatable-odd {
+    background-color: white;
+}
+
+.ui-widget,
+.ui-widget input,
+.ui-widget select {
+    font-family: "TelefonicaHeadLine-Light";
+}
