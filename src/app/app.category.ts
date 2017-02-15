@@ -3,6 +3,8 @@ import { CategoryService } from './category/categoryService';
 import { Category } from './category/category';
 import { ProductService } from './product/productService';
 import { Page } from './product/page';
+import { Product } from './product/product';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,6 +22,7 @@ export class AppCategory implements OnInit {
 
     page: Page;
     arrayPage: Page[] = [];
+    arrayProduct: Product[] = [];
 
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
@@ -64,6 +67,10 @@ export class AppCategory implements OnInit {
             error => this.errorMessage = <any>error,
             () => {
                 console.log(i);
+                for (let entry of this.page.productItems.productItem) {
+                    console.log(entry);
+                    this.arrayProduct.push(entry);
+                }
                 this.arrayPage[i - 1] = this.page;
                 if (this.page.items == 50) {
                     this.getArrayPage(++i);
