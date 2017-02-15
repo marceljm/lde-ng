@@ -64,13 +64,12 @@
         [responsive]="true" paginatorPosition="bottom" emptyMessage="Nenhum produto encontrado">
         <p-header>
         </p-header>
-        <p-column>
+        <p-column header="produto">
             <template let-col let-product="rowData" pTemplate="body">
                 <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px"></div>
             </template>
         </p-column>
         <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
-            <p-header>asd</p-header>
             <template let-col let-product="rowData" pTemplate="body">
                 <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
             </template>
