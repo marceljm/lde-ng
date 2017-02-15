@@ -42,7 +42,7 @@
                                 <div style="font-size:16px; color: #2196f3; text-align:left">{{productItem.name}}</div>
                             </p-header>
                             <div style="text-align: center"><img [src]="productItem.image.medium" style="height: 180px"></div><br>
-                            <div style="font-size:17px;color: #4caf50;text-align:right">{{getFormattedPrice(productItem.price)}}</div>
+                            <div style="font-size:16px;color: #4caf50;text-align:right">{{getFormattedPrice(productItem.price)}}</div>
                         </p-panel>
                         <!--/a-->
 <!--/div>
@@ -55,34 +55,36 @@
 
 <p-growl [value]="msgs" life="3000"></p-growl>
 
-<div *ngIf="getLevel() == 2 || getLevel() == 3">
-    <div class="ui-widget-header" style="text-align:center">
-        <i class="fa fa-search"></i>
+<div *ngIf="getLevel() == 2 || getLevel() == 3" style="padding: 7px; padding-bottom: 0">
+    <div class="ui-widget-header" style="text-align:center; padding: 7px">
+        <i class="fa fa-search" style="padding: 7px"></i>
         <input #gb type="text" pInputText size="30" placeholder="filtro global (texto exato)">
     </div>
-    <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [globalFilter]="gb" [responsive]="true"
-        paginatorPosition="both" emptyMessage="Nenhum produto encontrado">
-        <p-header>
-        </p-header>
-        <p-column header="">
-            <template let-col let-product="rowData" pTemplate="body">
-                <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px"></div>
-            </template>
-        </p-column>
-        <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
-            <template let-col let-product="rowData" pTemplate="body">
-                <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
-            </template>
-        </p-column>
-        <p-column field="manufacturer" [filter]="true" filterPlaceholder="filtrar por marca (texto exato)">
-            <template let-col let-product="rowData" pTemplate="body">
-                <div style="font-size:16px; color:dimgrey; text-align:center">{{product.manufacturer}}</div>
-            </template>
-        </p-column>
-        <p-column field="price" [sortable]="true">
-            <template let-col let-product="rowData" pTemplate="body">
-                <div style="font-size:16px;color: #4caf50;text-align:center">{{getFormattedPrice(product.price)}}</div>
-            </template>
-        </p-column>
-        </p-dataTable>
+    <div style="text-align:center; padding-top: 7px">
+        <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [globalFilter]="gb" [responsive]="true"
+            paginatorPosition="both" emptyMessage="Nenhum produto encontrado">
+            <p-header>
+            </p-header>
+            <p-column header="">
+                <template let-col let-product="rowData" pTemplate="body">
+                    <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px;"></div>
+                </template>
+            </p-column>
+            <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
+                <template let-col let-product="rowData" pTemplate="body">
+                    <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
+                </template>
+            </p-column>
+            <p-column field="manufacturer" [filter]="true" filterPlaceholder="filtrar por marca (texto exato)">
+                <template let-col let-product="rowData" pTemplate="body">
+                    <div style="font-size:16px; color:dimgrey; text-align:center">{{product.manufacturer}}</div>
+                </template>
+            </p-column>
+            <p-column field="price" [sortable]="true">
+                <template let-col let-product="rowData" pTemplate="body">
+                    <div style="font-size:16px; color: #4caf50; text-align:center">{{getFormattedPrice(product.price)}}</div>
+                </template>
+            </p-column>
+            </p-dataTable>
+    </div>
 </div>
