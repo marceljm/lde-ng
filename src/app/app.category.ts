@@ -26,7 +26,8 @@ export class AppCategory implements OnInit {
     arrayProduct: Product[] = [];
 
     msgs: Message[] = [];
-    totalItems: number = 0;
+
+    private productSet: Set<string> = new Set<string>();
 
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
@@ -70,13 +71,14 @@ export class AppCategory implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
-                console.log(i);
                 for (let entry of this.page.productItems.productItem) {
-                    console.log(entry);
-                    this.arrayProduct.push(entry);
+                    if (!this.productSet.has(entry.name)) {
+                        this.arrayProduct.push(entry);
+                        this.productSet.add(entry.name);
+                    }
                 }
                 this.arrayPage[i - 1] = this.page;
-                this.showInfo(this.page.items);
+                this.showInfo();
                 if (this.page.items == 50) {
                     this.getArrayPage(++i);
                 }
@@ -123,9 +125,8 @@ export class AppCategory implements OnInit {
         return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price);
     }
 
-    showInfo(total: number) {
-        this.totalItems += total;
+    showInfo() {
         this.msgs = [];
-        this.msgs.push({ severity: 'info', summary: 'Localizando...', detail: this.totalItems + ' produtos encontrados' });
+        this.msgs.push({ severity: 'info', summary: 'Localizando...', detail: this.productSet.size + ' produtos encontrados' });
     }
 }
