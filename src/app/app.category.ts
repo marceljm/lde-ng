@@ -62,7 +62,7 @@ export class AppCategory implements OnInit {
                         }
                     }
                 }
-                this.getArrayPage(1);
+                if (this.getLevel() > 1) this.getArrayPage(1);
             });
     }
 
@@ -71,6 +71,7 @@ export class AppCategory implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
+                if (!this.page.productItems) return;
                 for (let entry of this.page.productItems.productItem) {
                     if (!this.productSet.has(entry.name)) {
                         this.arrayProduct.push(entry);

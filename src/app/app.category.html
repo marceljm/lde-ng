@@ -55,7 +55,7 @@
 
 <p-growl [value]="msgs" life="3000"></p-growl>
 
-<div *ngIf="getLevel() == 3">
+<div *ngIf="getLevel() == 2 || getLevel() == 3">
     <div class="ui-widget-header" style="text-align:center">
         <i class="fa fa-search"></i>
         <input #gb type="text" pInputText size="30" placeholder="filtro global (texto exato)">
