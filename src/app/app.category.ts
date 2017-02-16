@@ -29,6 +29,8 @@ export class AppCategory implements OnInit {
 
     private productSet: Set<string> = new Set<string>();
 
+    lastLevel: boolean = false;
+
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
@@ -71,6 +73,7 @@ export class AppCategory implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
+                if (i == 1) this.updateLastLevel();
                 if (!this.page.productItems) return;
                 for (let entry of this.page.productItems.productItem) {
                     if (!this.productSet.has(entry.name)) {
@@ -79,7 +82,8 @@ export class AppCategory implements OnInit {
                     }
                 }
                 this.arrayPage[i - 1] = this.page;
-                this.showInfo();
+                if (this.lastLevel)
+                    this.showInfo();
                 if (this.page.items == 50) {
                     this.getArrayPage(++i);
                 }
@@ -129,5 +133,9 @@ export class AppCategory implements OnInit {
     showInfo() {
         this.msgs = [];
         this.msgs.push({ severity: 'info', summary: 'Localizando...', detail: this.productSet.size + ' produtos encontrados' });
+    }
+
+    private updateLastLevel() {
+        if (this.getLevel() > 0 && !this.getSubcategories()) this.lastLevel = true;
     }
 }
