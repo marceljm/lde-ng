@@ -64,7 +64,8 @@ export class AppCategory implements OnInit {
                         }
                     }
                 }
-                if (this.getLevel() > 1) this.getArrayPage(1);
+                this.updateLastLevel();
+                if (this.lastLevel) this.getArrayPage(1);
             });
     }
 
@@ -73,8 +74,7 @@ export class AppCategory implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
-                if (i == 1) this.updateLastLevel();
-                if (!this.page.productItems) return;
+                if (!this.page.productItems || !this.lastLevel) return;
                 for (let entry of this.page.productItems.productItem) {
                     if (!this.productSet.has(entry.name)) {
                         this.arrayProduct.push(entry);
@@ -105,6 +105,10 @@ export class AppCategory implements OnInit {
 
     getName() {
         return this.linkName.get(this.getLink());
+    }
+
+    getLastName() {
+        return this.getName().split(/ \/ /).pop();
     }
 
     toLink(name: string) {
