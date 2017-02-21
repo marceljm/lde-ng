@@ -9,7 +9,7 @@ import { Jsonp } from '@angular/http';
 @Injectable()
 export class ProductService {
 
-    private urlPage = 'http://api.zanox.com/json/2011-03-01/products?connectid=D288A5846EE8D7A640D4&merchantcategory=%s&region=BR&minprice=1&maxprice=100000&hasimages=true&partnership=confirmed&items=50&page=%s&callback=JSONP_CALLBACK';
+    private urlPage = 'http://api.zanox.com/json/2011-03-01/products?connectid=D288A5846EE8D7A640D4&merchantcategory=%s&region=BR&hasimages=true&partnership=confirmed&items=50&page=%s&callback=JSONP_CALLBACK';
     private urlProgram = 'http://api.zanox.com/json/2011-03-01/programs?connectid=D288A5846EE8D7A640D4&startdate=2012-06-01&partnership=DIRECT&region=BR';
 
     constructor(private _jsonp: Jsonp) { }

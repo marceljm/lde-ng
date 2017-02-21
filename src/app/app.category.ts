@@ -31,6 +31,8 @@ export class AppCategory implements OnInit {
 
     lastLevel: boolean = false;
 
+    emptyMessage: string = "aguarde...";
+
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
@@ -74,7 +76,10 @@ export class AppCategory implements OnInit {
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {
-                if (!this.page.productItems || !this.lastLevel) return;
+                if (!this.page.productItems || !this.lastLevel) {
+                    this.emptyMessage = "nenhum produto encontrado";
+                    return;
+                }
                 for (let entry of this.page.productItems.productItem) {
                     if (!this.productSet.has(entry.name)) {
                         this.arrayProduct.push(entry);
@@ -141,5 +146,9 @@ export class AppCategory implements OnInit {
 
     private updateLastLevel() {
         if (this.getLevel() > 0 && !this.getSubcategories()) this.lastLevel = true;
+    }
+
+    getProductLink(name: string) {
+        return this.getLink() + '/' + this.toLink(name);
     }
 }

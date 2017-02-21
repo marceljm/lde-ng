@@ -30,7 +30,7 @@
     <p-footer></p-footer>
 </p-dataGrid>
 
-<!--a [href]="productItem.trackingLinks.trackingLink[0].ppc" style="text-decoration: none;"-->
+<!--a [href]="productItem.trackingLinks.trackingLink[0].ppc" -->
 
 <p-growl [value]="msgs" life="3000"></p-growl>
 
@@ -41,7 +41,7 @@
     </div>
     <div style="text-align:center; padding-top: 7px">
         <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [globalFilter]="gb" [responsive]="true"
-            paginatorPosition="both" emptyMessage="Nenhum produto encontrado">
+            paginatorPosition="both" [emptyMessage]="emptyMessage">
             <p-header>
             </p-header>
             <p-column header="">
@@ -51,7 +51,9 @@
             </p-column>
             <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
                 <template let-col let-product="rowData" pTemplate="body">
-                    <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
+                    <a [href]="getProductLink(product.name)" style="text-decoration: none;">
+                        <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
+                    </a>
                 </template>
             </p-column>
             <p-column field="manufacturer" [filter]="true" filterPlaceholder="filtrar por marca (texto exato)">
