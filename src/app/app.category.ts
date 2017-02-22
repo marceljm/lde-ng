@@ -4,6 +4,8 @@ import { Category } from './category/category';
 import { ProductService } from './product/productService';
 import { Page } from './product/page';
 import { Product } from './product/product';
+import { ProductItems } from './product/productItems';
+
 import { Message } from 'primeng/primeng';
 
 import { Router } from '@angular/router';
@@ -33,9 +35,23 @@ export class AppCategory implements OnInit {
 
     emptyMessage: string = "aguarde...";
 
+    productItems: ProductItems;
+
+
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
+        if (this.isProduct()) {
+            this.productService.getProduct(this.getId()).subscribe(
+                productItems => this.productItems = productItems,
+                error => this.errorMessage = <any>error, 
+                () => {
+                    console.log(this.productItems);
+                }
+            )
+            return;
+        }
+
         this.categoryService.getCategory().then(
             categories => this.categories = categories,
         ).then(
@@ -148,7 +164,12 @@ export class AppCategory implements OnInit {
 
     isProduct() {
         if (this.getLevel() < 2) return false;
-        return this.getLink().split('/')[1].match(/[a-z0-9]{32}/) != null;
+        return this.getId() != null;
+    }
+
+    getId() {
+        let match: RegExpMatchArray = this.getLink().split('/')[1].match(/[a-z0-9]{32}/);
+        if (match) return match[0];
     }
 
     getProductLink(name: string, id: string) {
