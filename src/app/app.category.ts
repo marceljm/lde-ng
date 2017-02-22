@@ -147,6 +147,10 @@ export class AppCategory implements OnInit {
     }
 
     getProductLink(name: string) {
-        return this.getLink() + '/' + this.toLink(name);
+        let aux: string = this.getLink() + '/' + this.toLink(name).replace(/[\~\<\=\>\|\_\-\,\;\:\!\?\/\.\\'\"\(\)\[\]\@\$\*\&\#\%\+]/g, '-');
+        while (aux.match('--'))
+            aux = aux.replace(/--/g, '-');
+        aux = aux.replace(/-$/, '').replace(/^-/, '');
+        return aux;
     }
 }
