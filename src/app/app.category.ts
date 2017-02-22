@@ -146,8 +146,9 @@ export class AppCategory implements OnInit {
         this.lastLevel = this.getLevel() > 1 && !this.getSubcategories() && !this.isProduct();
     }
 
-    private isProduct() {
-        return this.getLink().split('/')[1].match(/[a-z0-9]{32}/);
+    isProduct() {
+        if (this.getLevel() < 2) return false;
+        return this.getLink().split('/')[1].match(/[a-z0-9]{32}/) != null;
     }
 
     getProductLink(name: string, id: string) {

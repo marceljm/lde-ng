@@ -46,7 +46,9 @@
             </p-header>
             <p-column header="">
                 <template let-col let-product="rowData" pTemplate="body">
-                    <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px;"></div>
+                    <a [href]="getProductLink(product.name, product['@id'])">
+                        <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px;"></div>
+                    </a>
                 </template>
             </p-column>
             <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
@@ -68,4 +70,8 @@
             </p-column>
             </p-dataTable>
     </div>
+</div>
+
+<div [ngClass]="{'inactive':!isProduct()}" style="padding: 7px; padding-bottom: 0">
+    Product
 </div>
