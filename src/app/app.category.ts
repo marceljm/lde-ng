@@ -32,19 +32,20 @@ export class AppCategory implements OnInit {
     private productSet: Set<string> = new Set<string>();
 
     lastLevel: boolean = false;
+    isProduct: boolean = false;
 
     emptyMessage: string = "aguarde...";
 
-    productItems: ProductItems;
-
+    productItems: ProductItems = new ProductItems;
 
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
-        if (this.isProduct()) {
+        this.updateIsProduct();
+        if (this.isProduct) {
             this.productService.getProduct(this.getId()).subscribe(
                 productItems => this.productItems = productItems,
-                error => this.errorMessage = <any>error, 
+                error => this.errorMessage = <any>error,
                 () => {
                     console.log(this.productItems);
                 }
@@ -159,12 +160,12 @@ export class AppCategory implements OnInit {
     }
 
     private updateLastLevel() {
-        this.lastLevel = this.getLevel() > 1 && !this.getSubcategories() && !this.isProduct();
+        this.lastLevel = this.getLevel() > 1 && !this.getSubcategories() && !this.isProduct;
     }
 
-    isProduct() {
-        if (this.getLevel() < 2) return false;
-        return this.getId() != null;
+    private updateIsProduct() {
+        if (this.getLevel() < 2) this.isProduct = false;
+        else this.isProduct = (this.getId() != null);
     }
 
     getId() {
