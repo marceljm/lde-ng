@@ -8,3 +8,4 @@ cp -r src/resources aot
 mkdir -p aot/node_modules/primeng/resources/themes/omega/fonts
 cp node_modules/primeng/resources/themes/omega/fonts/* aot/node_modules/primeng/resources/themes/omega/fonts
 cp node_modules/primeng/resources/themes/omega/theme.css aot/node_modules/primeng/resources/themes/omega
+cat src/resources/data/category.json  | tr "\n" " " | tr -s " " | sed s/{\ /{/g | sed s/\\[\ /\\[/g | sed s/\ }/}/g | sed s/\ \\]/\\]/g | sed s/\ {/{/g | sed s/:\ /:/g | sed s/,\ \"/,\"/g > aot/resources/data/category.json
