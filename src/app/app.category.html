@@ -53,6 +53,7 @@
                 <template let-col let-product="rowData" pTemplate="body">
                     <a [href]="getProductLink(product.name)" style="text-decoration: none;">
                         <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
+                        {{product['@id']}}
                     </a>
                 </template>
             </p-column>
