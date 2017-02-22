@@ -143,14 +143,18 @@ export class AppCategory implements OnInit {
     }
 
     private updateLastLevel() {
-        if (this.getLevel() > 0 && !this.getSubcategories()) this.lastLevel = true;
+        this.lastLevel = this.getLevel() > 1 && !this.getSubcategories() && !this.isProduct();
     }
 
-    getProductLink(name: string) {
-        let aux: string = this.getLink() + '/' + this.toLink(name).replace(/[\~\<\=\>\|\_\-\,\;\:\!\?\/\.\\'\"\(\)\[\]\@\$\*\&\#\%\+]/g, '-');
+    private isProduct() {
+        return this.getLink().split('/')[1].match(/[a-z0-9]{32}/);
+    }
+
+    getProductLink(name: string, id: string) {
+        let aux: string = this.toLink(name).replace(/[\~\<\=\>\|\_\-\,\;\:\!\?\/\.\\'\"\(\)\[\]\@\$\*\&\#\%\+]/g, '-');
         while (aux.match('--'))
             aux = aux.replace(/--/g, '-');
         aux = aux.replace(/-$/, '').replace(/^-/, '');
-        return aux;
+        return aux + '/' + id;
     }
 }
