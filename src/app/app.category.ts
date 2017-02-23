@@ -38,6 +38,8 @@ export class AppCategory implements OnInit {
 
     productItems: ProductItems = new ProductItems;
 
+    trackingLink: string = this.getLink();
+
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
@@ -192,5 +194,9 @@ export class AppCategory implements OnInit {
             aux = aux.replace(/--/g, '-');
         aux = aux.replace(/-$/, '').replace(/^-/, '');
         return aux + '/' + id;
+    }
+
+    changeLink() {
+        this.trackingLink = this.productItems.productItem[0].trackingLinks.trackingLink[0].ppc;
     }
 }
