@@ -47,7 +47,7 @@ export class AppCategory implements OnInit {
                 productItems => this.productItems = productItems,
                 error => this.errorMessage = <any>error,
                 () => {
-                    this.productService.getPage(this.productItems.productItem[0].merchantCategory, 1).subscribe(
+                    this.productService.getPage(this.productItems.productItem[0].merchantCategory, 1, 48).subscribe(
                         page => this.page = page,
                         error => this.errorMessage = <any>error,
                         () => {
@@ -102,7 +102,7 @@ export class AppCategory implements OnInit {
     }
 
     getArrayPage(i: number) {
-        this.productService.getPage(this.getName(), i).subscribe(
+        this.productService.getPage(this.getName(), i, 50).subscribe(
             page => this.page = page,
             error => this.errorMessage = <any>error,
             () => {

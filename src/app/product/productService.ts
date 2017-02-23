@@ -11,13 +11,13 @@ import { Jsonp } from '@angular/http';
 @Injectable()
 export class ProductService {
 
-    private urlPage = 'http://api.zanox.com/json/2011-03-01/products?connectid=D288A5846EE8D7A640D4&merchantcategory=%s&region=BR&hasimages=true&partnership=confirmed&items=50&page=%s&callback=JSONP_CALLBACK';
+    private urlPage = 'http://api.zanox.com/json/2011-03-01/products?connectid=D288A5846EE8D7A640D4&merchantcategory=%s&region=BR&hasimages=true&partnership=confirmed&items=%s&page=%s&callback=JSONP_CALLBACK';
     private urlProduct = 'http://api.zanox.com/json/2011-03-01/products/product/%s?connectid=D288A5846EE8D7A640D4&callback=JSONP_CALLBACK';
 
     constructor(private _jsonp: Jsonp) { }
 
-    getPage(category: string, page: number): Observable<Page> {
-        let url = this.urlPage.replace('%s', category).replace('%s', page.toString());
+    getPage(category: string, page: number, items: number): Observable<Page> {
+        let url = this.urlPage.replace('%s', category).replace('%s', items.toString()).replace('%s', page.toString());
         console.log(url);
         return this._jsonp.get(url).map(this.extractData).catch(this.handleError);
     }
