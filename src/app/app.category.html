@@ -75,8 +75,8 @@
 
 <div [ngClass]="{'inactive':!isProduct}" style="padding: 7px; padding-bottom: 0">
     <div class="ui-g" *ngIf="productItems.productItem">
-        <div class="ui-g-12 ui-g-nopad">
-            <div class="ui-g-8">
+        <div class="ui-g">
+            <div class="ui-g-12 ui-md-6 ui-lg-6">
                 <p-panel>
                     <p-header>
                         <div style="font-family:TelefonicaHeadLine-Light; font-size:16px; color: black; text-align:center">
@@ -84,28 +84,35 @@
                         </div>
                     </p-header>
                     <div class="ui-g" style="text-align: center">
-                        <div class="ui-g-8" style="text-align: center"><img [src]="productItems.productItem[0].image.medium" style="height: 250px;"></div>
-                        <div class="ui-g-4">
-                            <div class="ui-g-12" style="font-size:26px; color:#2196f3; text-align:center">
+                        <div class="ui-g-12 ui-md-8 ui-lg-8"><img [src]="productItems.productItem[0].image.medium" style="height: 250px;"></div>
+                        <div class="ui-g-12 ui-md-4 ui-lg-4">
+                            <div class="ui-g-12" style="font-size:24px; color:#2196f3">
                                 {{productItems.productItem[0].manufacturer}}
                             </div>
                             <div class="ui-g-12">
-                                <div class="ui-g-12" style="font-size:26px; color:dimgrey; text-decoration: line-through; text-align:center" *ngIf="productItems.productItem[0].priceOld != 0">
-                                    {{getFormattedPrice(productItems.productItem[0].priceOld)}}
+                                <div class="ui-g-12" style="font-size:24; color:dimgrey; text-decoration: line-through" *ngIf="productItems.productItem[0].priceOld != 0">
+                                    de {{getFormattedPrice(productItems.productItem[0].priceOld)}}
                                 </div>
-                                <div class="ui-g-12" style="font-size:26px; color: #4caf50; text-align:center">
-                                    {{getFormattedPrice(productItems.productItem[0].price)}}
+                                <div class="ui-g-12" style="font-size:24px; color: #4caf50">
+                                    por {{getFormattedPrice(productItems.productItem[0].price)}}
                                 </div>
                             </div>
                             <div class="ui-g-12">
-                                <button pButton type="button" style="font-size:26px;" label="saber mais"></button>
+                                <button pButton type="button" style="font-size:24px;" label="ir para loja"></button>
                             </div>
                         </div>
                     </div>
                 </p-panel>
             </div>
-            <div class="ui-g-4"></div>
-            <div class="ui-g-4"></div>
+            <div class="ui-g-12 ui-md-6 ui-lg-6">
+                <p-panel>
+                    <p-header>
+                        <div style="font-family:TelefonicaHeadLine-Light; font-size:16px; color: black; text-align:center">
+                            <h3>produtos similares</h3>
+                        </div>
+                    </p-header>
+                </p-panel>
+            </div>
         </div>
     </div>
 </div>
