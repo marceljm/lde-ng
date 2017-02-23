@@ -1,3 +1,8 @@
+<head>
+    <title>{{title}}</title>
+    <meta name="description" [content]="content" />
+</head>
+
 <p-dataGrid [value]="getSubcategories()" *ngIf="getLevel() == 1 || getLevel() == 2 || getLevel() == 3">
     <p-header>
         <div style="font-size:16px; color: black; text-align:center">{{getName()}}</div>
@@ -22,7 +27,7 @@
                     <div style="font-size:16px; color: black; text-align:center">{{category.name}}</div>
                 </p-header>
                 <div style="text-align: center">
-                    <img [src]="category.icon" (click)="navigate(toLink(category.name))">
+                    <img [src]="category.icon" (click)="navigate(toLink(category.name))" [alt]="category.name">
                 </div>
             </p-panel>
         </div>

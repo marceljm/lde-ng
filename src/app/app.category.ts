@@ -40,6 +40,9 @@ export class AppCategory implements OnInit {
 
     trackingLink: string = this.getLink();
 
+    title: string = "Loja de Eletrônicos";
+    content: string = "Loja com milhares de produtos eletrônicos: eletrodomésticos, eletroportáteis, games, informática, tablets, telefonia, acessórios, câmeras, filmadoras e mais.";
+
     constructor(private categoryService: CategoryService, private productService: ProductService, private router: Router) { }
 
     ngOnInit() {
@@ -49,6 +52,8 @@ export class AppCategory implements OnInit {
                 productItems => this.productItems = productItems,
                 error => this.errorMessage = <any>error,
                 () => {
+                    this.title = this.content = this.productItems.productItem[0].name;
+
                     this.productService.getPage(this.productItems.productItem[0].merchantCategory, 1, 48).subscribe(
                         page => this.page = page,
                         error => this.errorMessage = <any>error,
@@ -98,6 +103,11 @@ export class AppCategory implements OnInit {
                         }
                     }
                 }
+                if (this.getLevel() > 0) {
+                    this.title += " / " + this.getName();
+                    this.content = this.title;
+                }
+
                 this.updateLastLevel();
                 if (this.lastLevel) this.getArrayPage(1);
             });
