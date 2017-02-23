@@ -111,6 +111,42 @@
                             <h3>produtos similares</h3>
                         </div>
                     </p-header>
+                    <div class="ui-widget-header" style="text-align:center; padding: 7px">
+                        <i class="fa fa-search" style="padding: 7px"></i>
+                        <input #gb type="text" pInputText size="30" placeholder="filtro global (texto exato)">
+                    </div>
+                    <div style="text-align:center; padding-top: 7px">
+                        <p-dataTable [value]="arrayProduct" [rows]="50" [paginator]="true" [pageLinks]="5" [globalFilter]="gb" [responsive]="true"
+                            paginatorPosition="both" [emptyMessage]="emptyMessage">
+                            <p-header>
+                            </p-header>
+                            <p-column header="">
+                                <template let-col let-product="rowData" pTemplate="body">
+                                    <a [href]="getProductLink(product.name, product['@id'])">
+                                        <div style="text-align: center"><img [src]="product.image.medium" style="height: 180px;"></div>
+                                    </a>
+                                </template>
+                            </p-column>
+                            <p-column field="name" [filter]="true" filterMatchMode="contains" filterPlaceholder="filtrar por nome (texto exato)">
+                                <template let-col let-product="rowData" pTemplate="body">
+                                    <a [href]="getProductLink(product.name, product['@id'])" style="text-decoration: none;">
+                                        <div style="font-size:16px; color: #2196f3; text-align:center">{{product.name}}</div>
+                                    </a>
+                                </template>
+                            </p-column>
+                            <p-column field="manufacturer" [filter]="true" filterPlaceholder="filtrar por marca (texto exato)">
+                                <template let-col let-product="rowData" pTemplate="body">
+                                    <div style="font-size:16px; color:dimgrey; text-align:center">{{product.manufacturer}}</div>
+                                </template>
+                            </p-column>
+                            <p-column field="price" [sortable]="true">
+                                <template let-col let-product="rowData" pTemplate="body">
+                                    <div style="font-size:12px; color:#999; text-decoration: line-through; text-align:center" *ngIf="product.priceOld != 0">{{getFormattedPrice(product.priceOld)}}</div>
+                                    <div style="font-size:16px; color: #4caf50; text-align:center">{{getFormattedPrice(product.price)}}</div>
+                                </template>
+                            </p-column>
+                            </p-dataTable>
+                    </div>
                 </p-panel>
             </div>
         </div>

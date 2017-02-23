@@ -47,7 +47,20 @@ export class AppCategory implements OnInit {
                 productItems => this.productItems = productItems,
                 error => this.errorMessage = <any>error,
                 () => {
-                    console.log(this.productItems);
+                    this.productService.getPage(this.productItems.productItem[0].merchantCategory, 1).subscribe(
+                        page => this.page = page,
+                        error => this.errorMessage = <any>error,
+                        () => {
+                            if (!this.page.productItems) return;
+                            for (let entry of this.page.productItems.productItem) {
+                                if (!this.productSet.has(entry.name)) {
+                                    this.arrayProduct.push(entry);
+                                    this.productSet.add(entry.name);
+                                }
+                            }
+                            this.arrayPage[0] = this.page;
+                        }
+                    );
                 }
             )
             return;
