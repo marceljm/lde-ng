@@ -18,13 +18,11 @@ export class ProductService {
 
     getPage(category: string, page: number, items: number): Observable<Page> {
         let url = this.urlPage.replace('%s', category).replace('%s', items.toString()).replace('%s', page.toString());
-        console.log(url);
         return this._jsonp.get(url).map(this.extractData).catch(this.handleError);
     }
 
     getProduct(id: string): Observable<ProductItems> {
         let url = this.urlProduct.replace('%s', id);
-        console.log(url);
         return this._jsonp.get(url).map(this.extractData).catch(this.handleError);
     }
 
